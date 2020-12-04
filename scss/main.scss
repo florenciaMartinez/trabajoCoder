@@ -1,0 +1,617 @@
+/*Variables*/
+$color-purple: #e2d2c7;
+$tamanio:10px;
+$color-aside: true;
+$fuente-Hind: 'Hind', sans-serif;
+$fuente-Montserrat:'Montserrat', sans-serif;
+
+/*variables de operadores*/
+@mixin formato-titulos {
+    color: darkcyan;
+    text-align: center;
+    font-size: 170%;
+    font-family: 'Montserrat', sans-serif;
+    margin: 2%;
+    font-weight: bold;
+}
+
+
+@mixin contenido-centrado {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+/*aplicado a todos los html*/
+/*color de todos los titulos principales*/
+.titulosPrincipales {
+    @include formato-titulos;
+}
+
+
+/*Aplicado al NAV*/
+
+
+.estiloNav li {
+    background-color: darkcyan;
+    height: ($tamanio*7)+1;
+    @include contenido-centrado;
+
+    a {
+        color: white;
+    }
+
+    &:hover {
+        background-color: $color-purple;
+        color: white;
+
+    }
+}
+
+.estiloSubmenu {
+    background-color: darkcyan;
+}
+
+.contenedorNav {
+    border: solid 1px darkcyan;
+    padding: 0%;
+}
+
+.menuHamburguesa {
+    background-color: darkcyan;
+}
+
+.imagenMenuHamburguesa {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff');
+}
+
+.estiloHeader {
+    padding: 0;
+}
+
+/*Aplicado al footer*/
+.ordenFooter {
+    background-color: darkcyan;
+    margin-top: 10px;
+}
+
+.derechosReservados {
+    font-family: 'Montserrat', san-serif;
+    color: white;
+    font-size: 80%;
+}
+
+.newsletter h3 {
+    color: white;
+    font-family: 'Montserrat', san-serif;
+    text-align: center;
+}
+
+.estiloInput input {
+    height: 25px;
+}
+
+.estiloRedes {
+    @include contenido-centrado;
+
+    ul {
+        display: flex;
+
+        li {
+            list-style: none;
+            padding: 20%;
+            transition: all 0.5s;
+
+            &:hover {
+                transform: scale(3, 3);
+            }
+
+            a {
+                color: white;
+            }
+        }
+    }
+}
+
+
+/*Aplicado al index*/
+
+.subtitulo{
+    color: gray;
+    font-size: 120%;
+    font-family: "Hind", sans-serif;
+    text-align: end;
+    margin-right: 300px;
+    background-color: whitesmoke;
+    margin-bottom: 30px;
+    
+}
+
+
+.imagenesCarousel img {
+    width: 100%;
+}
+
+.alineacionProdDestacados {
+    margin-bottom: 2%;
+}
+
+.animate__backInLeft {
+    animation-duration: 2s;
+}
+
+.imagenesProdDestacados img {
+    margin-bottom: $tamanio;
+}
+
+/*Banners Index*/
+
+
+
+.estiloBanners {
+    background-color: darkcyan;
+
+    a {
+        color: white;
+    }
+
+    .left {
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #FFF;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:hover:before {
+            visibility: visible;
+            width: 100%;
+        }
+
+    }
+
+}
+
+
+
+.ubicacionBanners {
+    margin: 2%;
+}
+
+/*titulos de prod destacados Index*/
+.titulosProductosDestacados {
+    @include formato-titulos;
+}
+
+/*responsive al index*/
+
+@media (max-width: 575.98px) {
+    .logoNav img {
+        width: 200px;
+    }
+
+    .footerMaxSize {
+        display: none;
+    }
+
+    .estiloRedes {
+        display: flex;
+        justify-content: start;
+
+        ul li {
+            padding: 30%;
+        }
+    }
+
+    .estiloRedes .derechosReservados p {
+        margin-top: $tamanio+2;
+    }
+
+}
+
+@media (min-width: 576px) {
+    .footerMinSize {
+        display: none;
+    }
+}
+
+
+/*Aplicado a productos*/
+/*estilos aside Categorias*/
+.formatoCategorias {
+    padding: 0px;
+
+    li {
+        color: gray;
+        list-style-type: none;
+        margin: 10px 0px 10px 0px;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+.tituloSecundarioCategorias {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*aplicando grids*/
+
+.grillaProductos {
+    display: grid;
+    grid-template-areas:
+
+        "categorias productosGrilla productosGrilla productosGrilla"
+        "categorias productosGrilla productosGrilla productosGrilla"
+        "categorias productosDescuentos productosDescuentos productosDescuentos"
+        "categorias productosDescuentos productosDescuentos productosDescuentos";
+
+    grid-template-columns: 1fr 1fr 2fr 2fr;
+    grid-template-rows: $tamanio*15 auto auto $tamanio*15;
+    grid-column-gap: $tamanio;
+    grid-row-gap: $tamanio;
+}
+
+
+.seccionPrincipal {
+    grid-area: productosGrilla;
+    border: double 1px darkcyan;
+}
+
+.categoriasAside {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    grid-area: categorias;
+    border: double 1px darkcyan;
+    flex-direction: column;
+
+    @if $color-aside==false {
+        background-color: darkcyan;
+    }
+
+    @else {
+        background-color: $color-purple;
+    }
+
+    h3 {
+        margin: 35px 0px 0px 0px;
+    }
+}
+
+.productosDescuentos {
+    grid-area: productosDescuentos;
+    border: double 1px darkcyan
+}
+
+.seccionImagenes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+@media (max-width: 575.98px) {
+    .seccionImagenes {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .categoriasAside {
+        display: none;
+    }
+
+    .grillaProductos {
+        grid-template-areas:
+
+            "productosGrillaproductosGrilla"
+            " productosGrilla  productosGrilla"
+            "productosDescuentos productosDescuentos"
+            " productosDescuentos productosDescuentos";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-column-gap: 0;
+        grid-row-gap: $tamanio;
+    }
+}
+
+.ImagenContenido {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    img {
+        width: 60%;
+        margin-top: $tamanio*2;
+    }
+
+    p {
+        font-family: 'Montserrat', san-serif;
+        color: gray;
+    }
+
+}
+
+.textoImagenContenido {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    i {
+        color: darkcyan;
+        font-size: 36px;
+    }
+
+    p {
+        padding: 30px;
+        font-weight: bold;
+
+    }
+
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+}
+
+/*Animaciones de Productos*/
+
+
+.imagenAnimacion {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.imagenDescuentos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.precioDescuento {
+    text-decoration: line-through;
+    background-color: $color-purple;
+}
+
+
+.logoNav {
+    animation-name: logo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logo {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*aplicado a nosotros.html*/
+/*solo para el texto de notros porque es mas largo*/
+.textoPrincipalNosotros {
+    color: rgb(121, 121, 121);
+    text-align: justify;
+    line-height: 150%;
+    font-family: 'Hind', sans-serif;
+    padding: $tamanio*3;
+}
+
+.graciasNosotros {
+    font-family: 'Montserrat', san-serif;
+    font-weight: bold;
+    color: gray;
+    font-size: 150%;
+    text-align: center;
+    letter-spacing: $tamanio*2;
+}
+
+
+
+.imagenNosotros img {
+    width: $tamanio*60;
+    padding: $tamanio*2;
+}
+
+.animate__backInDown {
+    animation-duration: 2s;
+}
+
+/*aplicado a cuidados*/
+
+.cuidados__imagen--fondo {
+    background-image: url("../imagenes/fondoCuidados.png");
+
+}
+
+.cuidados__imagen--principal {
+
+    img {
+        width: 80%;
+        padding: 0 10% 0 2%;
+    }
+}
+
+.animate__rotateInDownRight {
+
+
+
+    animation-duration: 2s;
+}
+
+.cuidados__texto {
+    color: gray;
+    text-align: center;
+    padding: 0.5%;
+    font-family: 'Montserrat', san-serif;
+    font-size: 120%;
+    font-weight: 700;
+}
+
+.cuidados__lista {
+
+    padding: 0;
+
+
+    ul {
+        margin: 0;
+        list-style: url("../imagenes/cretaTips.png");
+
+
+
+
+        li {
+            font-family: 'Montserrat', san-serif;
+            color: gray;
+            font-size: 150%;
+            padding: 2%;
+            transition: all 0.5s;
+
+            &:hover {
+                height: 200px;
+                width: 400px;
+                font-size: 250%;
+            }
+        }
+    }
+}
+
+/*Aplicado a Contactanos*/
+.textoContacto p {
+    text-align: center;
+    font-family: 'Montserrat', san-serif;
+    padding: 2%;
+    font-size: 140%;
+    color: white;
+
+}
+
+
+.ordenContacto {
+    display: flex;
+}
+
+.datosContacto {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    font-size: 170%;
+
+    ul li a {
+        text-decoration: none;
+        list-style: none;
+        color: white;
+    }
+}
+
+.wathsapp ul {
+    padding-left: 65px;
+
+    li {
+        list-style: url("../imagenes/logoWhatsapp.png");
+        transition: all 0.5s;
+
+        &:hover {
+            transform: scale(1.5, 1.5);
+        }
+    }
+}
+
+.email ul {
+    padding-left: 65px;
+
+    li {
+        list-style: url("../imagenes/logoMail.png");
+        padding: 30px;
+        transition: all 0.5s;
+
+        &:hover {
+            transform: scale(1.5, 1.5);
+        }
+    }
+}
+
+
+.cuadroDatos {
+    background-image: url("../imagenes/fondoContacto.jpg");
+
+}
+
+.ordenFormulario {
+
+    font-family: 'Montserrat', san-serif;
+}
+
+.textoFormulario p {
+    text-align: center;
+    font-size: 150%;
+}
+
+.datosFormulario {
+    font-size: 110%;
+    line-height: 150%;
+    border: double 1px darkcyan;
+    padding: 10px;
+    background-color: #e2d2c7;
+    color: gray;
+}
+
+.ubicacionContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Hind', sans-serif;
+    background-color: #E7E7E6;
+    margin-top: 10px;
+    color: black;
+    font-weight: lighter;
+
+    p {
+        margin: 0;
+        padding-bottom: 2px;
+    }
+
+    &:hover {
+        background-color: $color-purple;
+        color: white;
+    }
+}
+
+.estiloBotonesForm input {
+    background-color: $color-purple;
+    color: gray;
+
+    &:hover {
+        background-color: darkcyan;
+        color: white;
+    }
+}

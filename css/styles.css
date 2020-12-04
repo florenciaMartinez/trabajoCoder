@@ -1,0 +1,406 @@
+/*Variables*/
+/*variables de operadores*/
+/*aplicado a todos los html*/
+/*color de todos los titulos principales*/
+.titulosPrincipales {
+  color: darkcyan;
+  text-align: center;
+  font-size: 170%;
+  font-family: 'Montserrat', sans-serif;
+  margin: 2%;
+  font-weight: bold; }
+
+/*Aplicado al NAV*/
+.estiloNav li {
+  background-color: darkcyan;
+  height: 71px;
+  justify-content: center;
+  align-items: center;
+  display: flex; }
+  .estiloNav li a {
+    color: white; }
+  .estiloNav li:hover {
+    background-color: #e2d2c7;
+    color: white; }
+
+.estiloSubmenu {
+  background-color: darkcyan; }
+
+.contenedorNav {
+  border: solid 1px darkcyan;
+  padding: 0%; }
+
+.menuHamburguesa {
+  background-color: darkcyan; }
+
+.imagenMenuHamburguesa {
+  background-image: url("https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff"); }
+
+.estiloHeader {
+  padding: 0; }
+
+/*Aplicado al footer*/
+.ordenFooter {
+  background-color: darkcyan;
+  margin-top: 10px; }
+
+.derechosReservados {
+  font-family: 'Montserrat', san-serif;
+  color: white;
+  font-size: 80%; }
+
+.newsletter h3 {
+  color: white;
+  font-family: 'Montserrat', san-serif;
+  text-align: center; }
+
+.estiloInput input {
+  height: 25px; }
+
+.estiloRedes {
+  justify-content: center;
+  align-items: center;
+  display: flex; }
+  .estiloRedes ul {
+    display: flex; }
+    .estiloRedes ul li {
+      list-style: none;
+      padding: 20%;
+      transition: all 0.5s; }
+      .estiloRedes ul li:hover {
+        transform: scale(3, 3); }
+      .estiloRedes ul li a {
+        color: white; }
+
+/*Aplicado al index*/
+.subtitulo {
+  color: gray;
+  font-size: 120%;
+  font-family: "Hind", sans-serif;
+  text-align: end;
+  margin-right: 300px;
+  background-color: whitesmoke;
+  margin-bottom: 30px; }
+
+.imagenesCarousel img {
+  width: 100%; }
+
+.alineacionProdDestacados {
+  margin-bottom: 2%; }
+
+.animate__backInLeft {
+  animation-duration: 2s; }
+
+.imagenesProdDestacados img {
+  margin-bottom: 10px; }
+
+/*Banners Index*/
+.estiloBanners {
+  background-color: darkcyan; }
+  .estiloBanners a {
+    color: white; }
+  .estiloBanners .left {
+    position: relative; }
+    .estiloBanners .left:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #FFF;
+      visibility: hidden;
+      transition: all 0.3s ease-in-out; }
+    .estiloBanners .left:hover:before {
+      visibility: visible;
+      width: 100%; }
+
+.ubicacionBanners {
+  margin: 2%; }
+
+/*titulos de prod destacados Index*/
+.titulosProductosDestacados {
+  color: darkcyan;
+  text-align: center;
+  font-size: 170%;
+  font-family: 'Montserrat', sans-serif;
+  margin: 2%;
+  font-weight: bold; }
+
+/*responsive al index*/
+@media (max-width: 575.98px) {
+  .logoNav img {
+    width: 200px; }
+  .footerMaxSize {
+    display: none; }
+  .estiloRedes {
+    display: flex;
+    justify-content: start; }
+    .estiloRedes ul li {
+      padding: 30%; }
+  .estiloRedes .derechosReservados p {
+    margin-top: 12px; } }
+
+@media (min-width: 576px) {
+  .footerMinSize {
+    display: none; } }
+
+/*Aplicado a productos*/
+/*estilos aside Categorias*/
+.formatoCategorias {
+  padding: 0px; }
+  .formatoCategorias li {
+    color: gray;
+    list-style-type: none;
+    margin: 10px 0px 10px 0px; }
+    .formatoCategorias li:hover {
+      color: white; }
+
+.tituloSecundarioCategorias {
+  color: white;
+  font-family: 'Montserrat', sans-serif; }
+
+/*aplicando grids*/
+.grillaProductos {
+  display: grid;
+  grid-template-areas: "categorias productosGrilla productosGrilla productosGrilla" "categorias productosGrilla productosGrilla productosGrilla" "categorias productosDescuentos productosDescuentos productosDescuentos" "categorias productosDescuentos productosDescuentos productosDescuentos";
+  grid-template-columns: 1fr 1fr 2fr 2fr;
+  grid-template-rows: 150px auto auto 150px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
+
+.seccionPrincipal {
+  grid-area: productosGrilla;
+  border: double 1px darkcyan; }
+
+.categoriasAside {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  grid-area: categorias;
+  border: double 1px darkcyan;
+  flex-direction: column;
+  background-color: #e2d2c7; }
+  .categoriasAside h3 {
+    margin: 35px 0px 0px 0px; }
+
+.productosDescuentos {
+  grid-area: productosDescuentos;
+  border: double 1px darkcyan; }
+
+.seccionImagenes {
+  display: grid;
+  grid-template-columns: auto auto auto; }
+
+@media (max-width: 575.98px) {
+  .seccionImagenes {
+    display: grid;
+    grid-template-columns: auto; }
+  .categoriasAside {
+    display: none; }
+  .grillaProductos {
+    grid-template-areas: "productosGrillaproductosGrilla" " productosGrilla  productosGrilla" "productosDescuentos productosDescuentos" " productosDescuentos productosDescuentos";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-column-gap: 0;
+    grid-row-gap: 10px; } }
+
+.ImagenContenido {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative; }
+  .ImagenContenido img {
+    width: 60%;
+    margin-top: 20px; }
+  .ImagenContenido p {
+    font-family: 'Montserrat', san-serif;
+    color: gray; }
+
+.textoImagenContenido {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .textoImagenContenido i {
+    color: darkcyan;
+    font-size: 36px; }
+  .textoImagenContenido p {
+    padding: 30px;
+    font-weight: bold; }
+  .textoImagenContenido:hover {
+    opacity: 0.8; }
+
+/*Animaciones de Productos*/
+.imagenAnimacion {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+.imagenDescuentos {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+.precioDescuento {
+  text-decoration: line-through;
+  background-color: #e2d2c7; }
+
+.logoNav {
+  animation-name: logo;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; }
+
+@keyframes logo {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
+/*aplicado a nosotros.html*/
+/*solo para el texto de notros porque es mas largo*/
+.textoPrincipalNosotros {
+  color: #797979;
+  text-align: justify;
+  line-height: 150%;
+  font-family: 'Hind', sans-serif;
+  padding: 30px; }
+
+.graciasNosotros {
+  font-family: 'Montserrat', san-serif;
+  font-weight: bold;
+  color: gray;
+  font-size: 150%;
+  text-align: center;
+  letter-spacing: 20px; }
+
+.imagenNosotros img {
+  width: 600px;
+  padding: 20px; }
+
+.animate__backInDown {
+  animation-duration: 2s; }
+
+/*aplicado a cuidados*/
+.cuidados__imagen--fondo {
+  background-image: url("../imagenes/fondoCuidados.png"); }
+
+.cuidados__imagen--principal img {
+  width: 80%;
+  padding: 0 10% 0 2%; }
+
+.animate__rotateInDownRight {
+  animation-duration: 2s; }
+
+.cuidados__texto {
+  color: gray;
+  text-align: center;
+  padding: 0.5%;
+  font-family: 'Montserrat', san-serif;
+  font-size: 120%;
+  font-weight: 700; }
+
+.cuidados__lista {
+  padding: 0; }
+  .cuidados__lista ul {
+    margin: 0;
+    list-style: url("../imagenes/cretaTips.png"); }
+    .cuidados__lista ul li {
+      font-family: 'Montserrat', san-serif;
+      color: gray;
+      font-size: 150%;
+      padding: 2%;
+      transition: all 0.5s; }
+      .cuidados__lista ul li:hover {
+        height: 200px;
+        width: 400px;
+        font-size: 250%; }
+
+/*Aplicado a Contactanos*/
+.textoContacto p {
+  text-align: center;
+  font-family: 'Montserrat', san-serif;
+  padding: 2%;
+  font-size: 140%;
+  color: white; }
+
+.ordenContacto {
+  display: flex; }
+
+.datosContacto {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  font-size: 170%; }
+  .datosContacto ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: white; }
+
+.wathsapp ul {
+  padding-left: 65px; }
+  .wathsapp ul li {
+    list-style: url("../imagenes/logoWhatsapp.png");
+    transition: all 0.5s; }
+    .wathsapp ul li:hover {
+      transform: scale(1.5, 1.5); }
+
+.email ul {
+  padding-left: 65px; }
+  .email ul li {
+    list-style: url("../imagenes/logoMail.png");
+    padding: 30px;
+    transition: all 0.5s; }
+    .email ul li:hover {
+      transform: scale(1.5, 1.5); }
+
+.cuadroDatos {
+  background-image: url("../imagenes/fondoContacto.jpg"); }
+
+.ordenFormulario {
+  font-family: 'Montserrat', san-serif; }
+
+.textoFormulario p {
+  text-align: center;
+  font-size: 150%; }
+
+.datosFormulario {
+  font-size: 110%;
+  line-height: 150%;
+  border: double 1px darkcyan;
+  padding: 10px;
+  background-color: #e2d2c7;
+  color: gray; }
+
+.ubicacionContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Hind', sans-serif;
+  background-color: #E7E7E6;
+  margin-top: 10px;
+  color: black;
+  font-weight: lighter; }
+  .ubicacionContacto p {
+    margin: 0;
+    padding-bottom: 2px; }
+  .ubicacionContacto:hover {
+    background-color: #e2d2c7;
+    color: white; }
+
+.estiloBotonesForm input {
+  background-color: #e2d2c7;
+  color: gray; }
+  .estiloBotonesForm input:hover {
+    background-color: darkcyan;
+    color: white; }
