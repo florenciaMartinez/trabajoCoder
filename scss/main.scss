@@ -478,6 +478,11 @@ footer {
     padding: $tamanio*2;
 }
 
+@media (max-width: 575.98px) {
+    .imagenNosotros img{
+        width: 340px;
+    }
+}
 .animate__backInDown {
     animation-duration: 2s;
 }
