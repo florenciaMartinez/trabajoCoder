@@ -1,6 +1,19 @@
 /*Variables*/
 /*variables de operadores*/
 /*aplicado a todos los html*/
+body {
+  max-height: 2500px;
+  min-height: 1000px;
+  padding-bottom: 180px;
+  position: relative; }
+
+footer {
+  margin-top: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
 /*color de todos los titulos principales*/
 .titulosPrincipales {
   color: darkcyan;
@@ -81,6 +94,15 @@
   margin-right: 300px;
   background-color: whitesmoke;
   margin-bottom: 30px; }
+
+@media (max-width: 575.98px) {
+  .subtitulo {
+    color: gray;
+    font-size: 90%;
+    font-family: "Hind", sans-serif;
+    text-align: end;
+    background-color: whitesmoke;
+    margin: 2%; } }
 
 .imagenesCarousel img {
   width: 100%; }
