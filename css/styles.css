@@ -416,6 +416,12 @@ footer {
   background-color: #e2d2c7;
   color: gray; }
 
+@media (max-width: 575.98px) {
+  .datosFormulario {
+    width: 300px; }
+  .mensajeContacto {
+    width: 270px; } }
+
 .ubicacionContacto {
   display: flex;
   flex-direction: column;
