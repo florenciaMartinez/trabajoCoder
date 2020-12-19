@@ -175,8 +175,6 @@ footer {
 
 /*Banners Index*/
 
-
-
 .estiloBanners {
     background-color: darkcyan;
 
@@ -207,8 +205,6 @@ footer {
     }
 
 }
-
-
 
 .ubicacionBanners {
     margin: 2%;
@@ -348,6 +344,9 @@ footer {
         grid-template-rows: auto;
         grid-column-gap: 0;
         grid-row-gap: $tamanio;
+    }
+    footer{
+        position: relative;
     }
 }
 
