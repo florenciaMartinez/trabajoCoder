@@ -9,7 +9,13 @@ body {
 
 @media (max-width: 575.98px) {
   body {
-    padding-bottom: 0; } }
+    padding-bottom: 0; }
+  .estiloNav .estiloSubmenu {
+    position: absolute;
+    font-size: 100%;
+    min-width: 21.5rem;
+    text-align: center;
+    position: 0; } }
 
 footer {
   margin-top: 100px;
