@@ -7,12 +7,20 @@ body {
   padding-bottom: 180px;
   position: relative; }
 
+@media (max-width: 575.98px) {
+  body {
+    padding-bottom: 0; } }
+
 footer {
   margin-top: 100px;
   position: absolute;
   bottom: 0;
   right: 0;
   left: 0; }
+
+@media (max-width: 575.98px) {
+  footer {
+    position: relative; } }
 
 /*color de todos los titulos principales*/
 .titulosPrincipales {
@@ -225,9 +233,7 @@ footer {
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-column-gap: 0;
-    grid-row-gap: 10px; }
-  footer {
-    position: relative; } }
+    grid-row-gap: 10px; } }
 
 .ImagenContenido {
   display: flex;

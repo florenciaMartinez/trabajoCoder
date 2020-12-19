@@ -33,6 +33,12 @@ body {
     position: relative;
 }
 
+@media (max-width: 575.98px) {
+    body {
+        padding-bottom: 0;
+    }
+}
+
 footer {
     margin-top: 100px;
     position: absolute;
@@ -41,6 +47,11 @@ footer {
     left: 0;
 }
 
+@media (max-width: 575.98px) {
+    footer {
+        position: relative;
+    }
+}
 
 /*color de todos los titulos principales*/
 .titulosPrincipales {
@@ -147,13 +158,13 @@ footer {
 }
 
 @media (max-width: 575.98px) {
-    .subtitulo{
-     color: gray;
-    font-size: 90%;
-    font-family: "Hind", sans-serif;
-    text-align: end;
-    background-color: whitesmoke;
-    margin: 2%;
+    .subtitulo {
+        color: gray;
+        font-size: 90%;
+        font-family: "Hind", sans-serif;
+        text-align: end;
+        background-color: whitesmoke;
+        margin: 2%;
     }
 }
 
@@ -345,9 +356,7 @@ footer {
         grid-column-gap: 0;
         grid-row-gap: $tamanio;
     }
-    footer{
-        position: relative;
-    }
+
 }
 
 .ImagenContenido {
