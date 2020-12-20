@@ -75,9 +75,39 @@
 		<section class="container-fluid ">
 			<h1 class="titulosPrincipales"> Somos Creta Home</h1>
 			<h3 class="subtitulo">Productos unicos para decorar tus espacios</h3>
-			<div id="demo" class=" justify-content-center carousel slide row " data-ride="carousel">
+			<div id="demo" class=" justify-content-between carousel slide row carouselMaxSize " data-ride="carousel">
 				<!-- Indicators -->
-				<div class="col-md-6 col-sm-12">
+				<div class="col-md-6 col-sm-12 ">
+					<ul class="carousel-indicators">
+						<li data-target="#demo" data-slide-to="0" class="active"></li>
+						<li data-target="#demo" data-slide-to="1"></li>
+						<li data-target="#demo" data-slide-to="2"></li>
+					</ul>
+					<!-- The slideshow -->
+					<section class="carousel-inner">
+						<article class="carousel-item active imagenesCarousel">
+							<img src="imagenes/car1.png" alt="chica acostada entre varios almohadones">
+						</article>
+						<article class="carousel-item imagenesCarousel">
+							<img src="imagenes/car2.png" alt ="cama con pie de cama">
+						</article>
+						<article class="carousel-item imagenesCarousel">
+							<img src="imagenes/car3.png">
+						</article>
+					</section>
+
+					<!-- Left and right controls -->
+					<a class="carousel-control-prev" href="#demo" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<a class="carousel-control-next" href="#demo" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+				</div>
+			</div>
+			<div id="demo" class=" justify-content-center carousel slide row carouselMinSize " data-ride="carousel">
+				<!-- Indicators -->
+				<div class="col-md-6 col-sm-12 carouselMinSize">
 					<ul class="carousel-indicators">
 						<li data-target="#demo" data-slide-to="0" class="active"></li>
 						<li data-target="#demo" data-slide-to="1"></li>

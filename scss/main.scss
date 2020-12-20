@@ -175,6 +175,10 @@ footer {
     }
 }
 
+.carouselMaxSize{
+    width: 200%;
+    margin-left: 1px;
+}
 .imagenesCarousel img {
     width: 100%;
 }
@@ -243,6 +247,9 @@ footer {
     .footerMaxSize {
         display: none;
     }
+    .carouselMaxSize{
+        display: none;
+    }
 
     .estiloRedes {
         display: flex;
@@ -263,6 +270,10 @@ footer {
     .footerMinSize {
         display: none;
     }
+    .carouselMinSize{
+        display: none;
+    }
+
 }
 
 

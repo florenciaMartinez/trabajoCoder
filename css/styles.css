@@ -118,6 +118,10 @@ footer {
     background-color: whitesmoke;
     margin: 2%; } }
 
+.carouselMaxSize {
+  width: 200%;
+  margin-left: 1px; }
+
 .imagenesCarousel img {
   width: 100%; }
 
@@ -169,6 +173,8 @@ footer {
     width: 200px; }
   .footerMaxSize {
     display: none; }
+  .carouselMaxSize {
+    display: none; }
   .estiloRedes {
     display: flex;
     justify-content: start; }
@@ -179,6 +185,8 @@ footer {
 
 @media (min-width: 576px) {
   .footerMinSize {
+    display: none; }
+  .carouselMinSize {
     display: none; } }
 
 /*Aplicado a productos*/
