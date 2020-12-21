@@ -87,9 +87,16 @@ footer {
 .estiloRedes {
   justify-content: center;
   align-items: center;
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
+  .estiloRedes span {
+    font-family: "Montserrat", sans-serif;
+    color: white; }
   .estiloRedes ul {
-    display: flex; }
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-right: 90px; }
     .estiloRedes ul li {
       list-style: none;
       padding: 20%;
@@ -178,8 +185,10 @@ footer {
   .estiloRedes {
     display: flex;
     justify-content: start; }
-    .estiloRedes ul li {
-      padding: 30%; }
+    .estiloRedes ul {
+      margin-right: 160px; }
+      .estiloRedes ul li {
+        padding: 30%; }
   .estiloRedes .derechosReservados p {
     margin-top: 12px; } }
 

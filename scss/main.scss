@@ -37,7 +37,8 @@ body {
     body {
         padding-bottom: 0;
     }
-    .estiloNav .estiloSubmenu{
+
+    .estiloNav .estiloSubmenu {
         position: absolute;
         font-size: 100%;
         min-width: 21.5rem;
@@ -130,9 +131,18 @@ footer {
 
 .estiloRedes {
     @include contenido-centrado;
+    flex-direction: column;
+
+    span {
+        font-family: $fuente-Montserrat;
+        color: white;
+    }
 
     ul {
         display: flex;
+        padding: 0;
+        margin: 0;
+        margin-right: 90px;
 
         li {
             list-style: none;
@@ -175,10 +185,11 @@ footer {
     }
 }
 
-.carouselMaxSize{
+.carouselMaxSize {
     width: 200%;
     margin-left: 1px;
 }
+
 .imagenesCarousel img {
     width: 100%;
 }
@@ -247,7 +258,8 @@ footer {
     .footerMaxSize {
         display: none;
     }
-    .carouselMaxSize{
+
+    .carouselMaxSize {
         display: none;
     }
 
@@ -255,8 +267,12 @@ footer {
         display: flex;
         justify-content: start;
 
-        ul li {
-            padding: 30%;
+        ul {
+            margin-right: 160px;
+
+            li {
+                padding: 30%;
+            }
         }
     }
 
@@ -270,7 +286,8 @@ footer {
     .footerMinSize {
         display: none;
     }
-    .carouselMinSize{
+
+    .carouselMinSize {
         display: none;
     }
 
@@ -497,10 +514,11 @@ footer {
 }
 
 @media (max-width: 575.98px) {
-    .imagenNosotros img{
+    .imagenNosotros img {
         width: 340px;
     }
 }
+
 .animate__backInDown {
     animation-duration: 2s;
 }
@@ -643,11 +661,13 @@ footer {
     background-color: #e2d2c7;
     color: gray;
 }
+
 @media (max-width: 575.98px) {
-    .datosFormulario{
+    .datosFormulario {
         width: 300px;
     }
-    .mensajeContacto{
+
+    .mensajeContacto {
         width: 270px;
     }
 }
