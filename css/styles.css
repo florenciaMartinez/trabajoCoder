@@ -76,13 +76,46 @@ footer {
   color: white;
   font-size: 80%; }
 
-.newsletter h3 {
-  color: white;
-  font-family: 'Montserrat', san-serif;
-  text-align: center; }
+.newsletter {
+  background-color: darkcyan;
+  height: 200px;
+  display: flex;
+  align-items: center; }
+
+.newsletterMinSize {
+  background-color: darkcyan;
+  height: 200px;
+  display: flex;
+  align-items: center; }
+  .newsletterMinSize h3 {
+    color: white;
+    font-size: 250%;
+    text-align: center; }
+
+.formMinSize {
+  width: 140px; }
+
+.tituloNewsletter {
+  background-color: darkcyan;
+  display: flex;
+  height: 200px;
+  align-items: center; }
+  .tituloNewsletter h3 {
+    color: white;
+    font-family: 'Montserrat', san-serif;
+    text-align: center;
+    font-size: 150%; }
+
+.formatoNewsletter {
+  background-color: darkcyan;
+  height: 200px; }
 
 .estiloInput input {
   height: 25px; }
+
+.footerMaxSize {
+  height: 150px;
+  background-color: darkcyan; }
 
 .estiloRedes {
   justify-content: center;
@@ -91,7 +124,8 @@ footer {
   flex-direction: column; }
   .estiloRedes span {
     font-family: "Montserrat", sans-serif;
-    color: white; }
+    color: white;
+    font-size: 150%; }
   .estiloRedes ul {
     display: flex;
     padding: 0;
@@ -116,7 +150,7 @@ footer {
   right: 20px;
   bottom: 20px;
   border-radius: 50%;
-  line-height: 80px;
+  line-height: 10px;
   text-align: center;
   z-index: 999; }
   .btn-whatsapp img {
@@ -148,14 +182,29 @@ footer {
 .imagenesCarousel img {
   width: 100%; }
 
-.alineacionProdDestacados {
-  margin-bottom: 2%; }
-
 .animate__backInLeft {
   animation-duration: 2s; }
 
-.imagenesProdDestacados img {
-  margin-bottom: 10px; }
+.tamanioCardsIndex {
+  display: flex;
+  align-items: center;
+  width: 325px;
+  margin: 0%;
+  border: none; }
+  .tamanioCardsIndex img {
+    width: 325px; }
+  .tamanioCardsIndex h5 {
+    color: #e2d2c7;
+    font-family: "Hind", sans-serif;
+    font-size: 120%; }
+  .tamanioCardsIndex p {
+    font-family: "Hind", sans-serif;
+    color: gray; }
+
+.contenedorCards {
+  padding: 0%;
+  margin: 0%;
+  border: none; }
 
 /*Banners Index*/
 .estiloBanners {
@@ -195,6 +244,8 @@ footer {
   .logoNav img {
     width: 200px; }
   .footerMaxSize {
+    display: none; }
+  .formatoNewsletter {
     display: none; }
   .carouselMaxSize {
     display: none; }
