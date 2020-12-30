@@ -5,8 +5,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Creta Home - Productos </title>
-	<meta name="keywords"  content="decoración del hogar, almohadones, espejos, mantas, manteles, venta online, envio gratis, cuotas sin interes, envios a todo el pais, compra online">
-	<meta name="description" content="Compra online.  Disfruta de cuotas sin interes y envío gratis en compras mayores a $4000">
+	<meta name="keywords"
+		content="decoración del hogar, almohadones, espejos, mantas, manteles, venta online, envio gratis, cuotas sin interes, envios a todo el pais, compra online">
+	<meta name="description"
+		content="Compra online.  Disfruta de cuotas sin interes y envío gratis en compras mayores a $4000">
 	<meta name="city" content="Buenos Aires">
 	<meta name="country" content="Argentina">
 	<meta name="geography" content="Quilmes, Buenos Aires, Argentina">
@@ -20,7 +22,7 @@
 		rel="stylesheet">
 	<!-- bootstrap 4.5-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<!-- iconos-->	
+	<!-- iconos-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
 		integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<!-- estilos propios css-->
@@ -73,151 +75,197 @@
 		</nav>
 	</header>
 	<!-- este es el título no se bien dentro de que ponerlo -->
-	<main class="grillaProductos">
-		<section class="seccionPrincipal">
-			<div class="tituloGrillaProductos">
-				<h2 class="titulosPrincipales">PRODUCTOS </h2>
+	<main>
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+			Launch static backdrop modal
+		</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+			aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						...
+					</div>
+					<div class="modal-body">
+						<form>
+						  <div class="form-group">
+							<label for="recipient-name" class="col-form-label">Recipient:</label>
+							<input type="text" class="form-control" id="recipient-name">
+						  </div>
+						  <div>
+							<label for="email"> Email:</label>
+							<input type="mail" name="email" placeholder="robertoperez@gmail.com" />
+						</div>
+						  <div class="form-group">
+							<label for="message-text" class="col-form-label">Message:</label>
+							<textarea class="form-control" id="message-text"></textarea>
+						  </div>
+						</form>
+					  </div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Understood</button>
+					</div>
+				</div>
 			</div>
-			<section class="seccionImagenes">
-				<article class="ImagenContenido">
-					<div class="imagenAnimacion">
-						<img src="imagenes/almohadonTirreno.jpg" alt="Almohadon natural con flecos en el medio">
-					</div>
-					<p>Almohadón Tirreno</p>
-					<p>Precio $900</p>
-					<div class="textoImagenContenido">
-						<i class='fas fa-shopping-cart'></i>
-						<p> AGREGAR AL CARRITO </p>
-					</div>
-				</article>
-				<article class="ImagenContenido">
-					<div class="imagenAnimacion">
-						<img src="imagenes/almohadonPersa.jpg" alt="Almohadon estampado azul con natural">
-					</div>
-					<p>Almohadón Persa</p>
-					<p>Precio $800</p>
-					<div class="textoImagenContenido">
-						<i class='fas fa-shopping-cart'></i>
-						<p> AGREGAR AL CARRITO </p>
-					</div>
-				</article>
-				<article class="ImagenContenido">
-					<div class="imagenAnimacion">
-						<img src="imagenes/almohadonAmelie.jpg" alt="Almohadon rosa claro">
-					</div>
-					<p>Almohadón Amelie</p>
-					<p>Precio $950</p>
-					<div class="textoImagenContenido">
-						<i class='fas fa-shopping-cart'></i>
-						<p> AGREGAR AL CARRITO </p>
-					</div>
-				</article>
-				<article class="ImagenContenido">
-					<div class="imagenAnimacion">
-						<img src="imagenes/almoadonMarruecos.jpg"
-							alt="Almohadon natural con flecos en el medio y vivo en beige">
-					</div>
-					<p>Almohadón Marruecos</p>
-					<p>Precio $1000</p>
-					<div class="textoImagenContenido">
-						<i class='fas fa-shopping-cart'></i>
-						<p> AGREGAR AL CARRITO </p>
-					</div>
-				</article>
-				<article class="ImagenContenido">
-					<div class="imagenAnimacion">
-						<img src="imagenes/almohadonBuda.jpg" alt="Almohadon estampado gris con natural">
-					</div>
-					<p>Almohadón Persa</p>
-					<p>Precio $900</p>
-					<div class="textoImagenContenido">
-						<i class='fas fa-shopping-cart'></i>
-						<p> AGREGAR AL CARRITO </p>
-					</div>
-				</article>
-				<article class="ImagenContenido">
-					<div class="imagenAnimacion">
-						<img src="imagenes/almohadonRamona.jpg" alt="Almohadon rosa claro con un prelavado y arrugado">
-					</div>
-					<p>Almohadón Ramona</p>
-					<p>Precio $990</p>
-					<div class="textoImagenContenido">
-						<i class='fas fa-shopping-cart'></i>
-						<p> AGREGAR AL CARRITO </p>
-					</div>
-				</article>
-			</section>
-		</section>
-		<aside class="categoriasAside">
-			<h3 class="tituloSecundarioCategorias">Categorías</h3>
-			<ul class="formatoCategorias">
-				<li>Almohadones</li>
-				<li>Caminos e individuales</li>
-				<li>Espejos</li>
-				<li>Mantas y pie de cama</li>
-				<li>Manteles</li>
-				<li>Flores Secas</li>
-			</ul>
-		</aside>
-		<section class="productosDescuentos">
-			<div class="tituloGrillaProductos">
-				<h2 class="titulosPrincipales"> DESCUENTOS DE LA SEMANA </h2>
-			</div>
-			<section class="seccionImagenes">
-				<article class="ImagenContenido">
-					<div class="imagenDescuentos">
-						<img src="imagenes/mantas.jpg"
-							alt="Se ven dos mantas acomodadas sobre una mesa y un sillon con almohadones de fondo">
-					</div>
-					<p>Manta Panal</p>
-					<p>Precio Anterior</p>
-					<div class="precioDescuento">
-						<p> $2800</p>
-					</div>
-					<p>Ahora $1500</p>
-					<div class="textoImagenContenido">
-						<i class='fas fa-shopping-cart'></i>
-						<p> AGREGAR AL CARRITO </p>
-					</div>
-				</article>
-				<article class="ImagenContenido">
-					<div class="imagenDescuentos">
-						<img src="imagenes/ramoBlanco.png" alt="Ramo de Flores Dinamitas Blancas">
-					</div>
-					<p>Ramo Dinamitas</p>
-					<p>Precio Anterior</p>
-					<div class="precioDescuento">
-						<p> $700</p>
-					</div>
-					<p>Ahora $390</p>
-					<div class="textoImagenContenido">
-						<i class='fas fa-shopping-cart'></i>
-						<p> AGREGAR AL CARRITO </p>
-					</div>
-				</article>
-				<article class="ImagenContenido">
-					<div class="imagenDescuentos">
-						<img src="imagenes/mantelNepal.jpg" alt="mesa completa con mantel, camino y platos">
-					</div>
-					<p>Mantel Nepal</p>
-					<p>Precio Anterior</p>
-					<div class="precioDescuento">
-						<p> $2500</p>
-					</div>
-					<p>Ahora $1200</p>
-					<div class="textoImagenContenido">
-						<i class='fas fa-shopping-cart'></i>
-						<p> AGREGAR AL CARRITO </p>
-					</div>
-				</article>
-			</section>
-		</section>
-		<div class="btn-whatsapp">
-			<a href="https://api.whatsapp.com/send?phone=541162489798" target="_blank">
-			<img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="">
-			</a>
 		</div>
 
+
+		<div class="grillaProductos">
+			<section class="seccionPrincipal">
+				<div class="tituloGrillaProductos">
+					<h2 class="titulosPrincipales">PRODUCTOS </h2>
+				</div>
+				<section class="seccionImagenes">
+					<article class="ImagenContenido">
+						<div class="imagenAnimacion">
+							<img src="imagenes/almohadonTirreno.jpg" alt="Almohadon natural con flecos en el medio">
+						</div>
+						<p>Almohadón Tirreno</p>
+						<p>Precio $900</p>
+						<div class="textoImagenContenido">
+							<i class='fas fa-shopping-cart'></i>
+							<p> AGREGAR AL CARRITO </p>
+						</div>
+					</article>
+					<article class="ImagenContenido">
+						<div class="imagenAnimacion">
+							<img src="imagenes/almohadonPersa.jpg" alt="Almohadon estampado azul con natural">
+						</div>
+						<p>Almohadón Persa</p>
+						<p>Precio $800</p>
+						<div class="textoImagenContenido">
+							<i class='fas fa-shopping-cart'></i>
+							<p> AGREGAR AL CARRITO </p>
+						</div>
+					</article>
+					<article class="ImagenContenido">
+						<div class="imagenAnimacion">
+							<img src="imagenes/almohadonAmelie.jpg" alt="Almohadon rosa claro">
+						</div>
+						<p>Almohadón Amelie</p>
+						<p>Precio $950</p>
+						<div class="textoImagenContenido">
+							<i class='fas fa-shopping-cart'></i>
+							<p> AGREGAR AL CARRITO </p>
+						</div>
+					</article>
+					<article class="ImagenContenido">
+						<div class="imagenAnimacion">
+							<img src="imagenes/almoadonMarruecos.jpg"
+								alt="Almohadon natural con flecos en el medio y vivo en beige">
+						</div>
+						<p>Almohadón Marruecos</p>
+						<p>Precio $1000</p>
+						<div class="textoImagenContenido">
+							<i class='fas fa-shopping-cart'></i>
+							<p> AGREGAR AL CARRITO </p>
+						</div>
+					</article>
+					<article class="ImagenContenido">
+						<div class="imagenAnimacion">
+							<img src="imagenes/almohadonBuda.jpg" alt="Almohadon estampado gris con natural">
+						</div>
+						<p>Almohadón Persa</p>
+						<p>Precio $900</p>
+						<div class="textoImagenContenido">
+							<i class='fas fa-shopping-cart'></i>
+							<p> AGREGAR AL CARRITO </p>
+						</div>
+					</article>
+					<article class="ImagenContenido">
+						<div class="imagenAnimacion">
+							<img src="imagenes/almohadonRamona.jpg"
+								alt="Almohadon rosa claro con un prelavado y arrugado">
+						</div>
+						<p>Almohadón Ramona</p>
+						<p>Precio $990</p>
+						<div class="textoImagenContenido">
+							<i class='fas fa-shopping-cart'></i>
+							<p> AGREGAR AL CARRITO </p>
+						</div>
+					</article>
+				</section>
+			</section>
+			<aside class="categoriasAside">
+				<h3 class="tituloSecundarioCategorias">Categorías</h3>
+				<ul class="formatoCategorias">
+					<li>Almohadones</li>
+					<li>Caminos e individuales</li>
+					<li>Espejos</li>
+					<li>Mantas y pie de cama</li>
+					<li>Manteles</li>
+					<li>Flores Secas</li>
+				</ul>
+			</aside>
+			<section class="productosDescuentos">
+				<div class="tituloGrillaProductos">
+					<h2 class="titulosPrincipales"> DESCUENTOS DE LA SEMANA </h2>
+				</div>
+				<section class="seccionImagenes">
+					<article class="ImagenContenido">
+						<div class="imagenDescuentos">
+							<img src="imagenes/mantas.jpg"
+								alt="Se ven dos mantas acomodadas sobre una mesa y un sillon con almohadones de fondo">
+						</div>
+						<p>Manta Panal</p>
+						<p>Precio Anterior</p>
+						<div class="precioDescuento">
+							<p> $2800</p>
+						</div>
+						<p>Ahora $1500</p>
+						<div class="textoImagenContenido">
+							<i class='fas fa-shopping-cart'></i>
+							<p> AGREGAR AL CARRITO </p>
+						</div>
+					</article>
+					<article class="ImagenContenido">
+						<div class="imagenDescuentos">
+							<img src="imagenes/ramoBlanco.png" alt="Ramo de Flores Dinamitas Blancas">
+						</div>
+						<p>Ramo Dinamitas</p>
+						<p>Precio Anterior</p>
+						<div class="precioDescuento">
+							<p> $700</p>
+						</div>
+						<p>Ahora $390</p>
+						<div class="textoImagenContenido">
+							<i class='fas fa-shopping-cart'></i>
+							<p> AGREGAR AL CARRITO </p>
+						</div>
+					</article>
+					<article class="ImagenContenido">
+						<div class="imagenDescuentos">
+							<img src="imagenes/mantelNepal.jpg" alt="mesa completa con mantel, camino y platos">
+						</div>
+						<p>Mantel Nepal</p>
+						<p>Precio Anterior</p>
+						<div class="precioDescuento">
+							<p> $2500</p>
+						</div>
+						<p>Ahora $1200</p>
+						<div class="textoImagenContenido">
+							<i class='fas fa-shopping-cart'></i>
+							<p> AGREGAR AL CARRITO </p>
+						</div>
+					</article>
+				</section>
+			</section>
+			<div class="btn-whatsapp">
+				<a href="https://api.whatsapp.com/send?phone=541162489798" target="_blank">
+					<img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="">
+				</a>
+			</div>
+		</div>
 	</main>
 	<!-- final de página -->
 	<footer class="container-fluid ordenFooter ">

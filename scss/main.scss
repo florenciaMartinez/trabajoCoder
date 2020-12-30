@@ -111,6 +111,8 @@ footer {
 .ordenFooter {
     background-color: darkcyan;
     margin-top: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 .derechosReservados {
@@ -155,6 +157,8 @@ footer {
 .formatoNewsletter{
     background-color: darkcyan;
     height: 200px;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 .estiloInput input {
     height: 25px;
@@ -226,7 +230,7 @@ footer {
     margin-right: 300px;
     background-color: whitesmoke;
     margin-bottom: 30px;
-
+    padding-right: 30px;
 }
 
 @media (max-width: 575.98px) {
@@ -238,11 +242,20 @@ footer {
         background-color: whitesmoke;
         margin: 2%;
     }
+    .tamanioCardsIndex{
+        margin-left: 30px;
+    }
 }
 
+.ubicacionCards{
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 1325px;
+}
 .carouselMaxSize {
-    width: 200%;
-    margin-left: 1px;
+    margin-left: 0px;
+    margin-right: 0px;
+
 }
 
 .imagenesCarousel img {
@@ -277,6 +290,8 @@ footer {
     padding: 0%;
     margin: 0%;
     border: none;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -334,6 +349,7 @@ footer {
     }
     .formatoNewsletter{
         display: none;
+        
     }
 
     .carouselMaxSize {
