@@ -68,8 +68,6 @@ footer {
 
 
 /*Aplicado al NAV*/
-
-
 .estiloNav li {
     background-color: darkcyan;
     height: ($tamanio*7)+1;
@@ -105,6 +103,7 @@ footer {
 
 .estiloHeader {
     padding: 0;
+    background-color: darkcyan;
 }
 
 /*Aplicado al footer*/
@@ -245,6 +244,7 @@ footer {
     .tamanioCardsIndex{
         margin-left: 30px;
     }
+
 }
 
 .ubicacionCards{
@@ -338,7 +338,7 @@ footer {
 }
 
 /*responsive al index*/
-
+/*tamanio celular*/
 @media (max-width: 575.98px) {
     .logoNav img {
         width: 200px;
@@ -372,9 +372,11 @@ footer {
     .estiloRedes .derechosReservados p {
         margin-top: $tamanio+2;
     }
-
+    .ubicacionCards{
+        width: 100%;
+    }
 }
-
+/*tamanio PC*/
 @media (min-width: 576px) {
     .footerMinSize {
         display: none;
@@ -383,11 +385,40 @@ footer {
     .carouselMinSize {
         display: none;
     }
-
+  
 }
 
 
 /*Aplicado a productos*/
+
+/*Estilo Modal*/
+.formatoModal{
+    background-color: dimgray;
+    width: 100%;
+    border-radius: 0%;
+    color: withe;
+    color: white;
+    &:hover{
+        background-color:deepskyblue;
+    }
+}
+
+.modalProductos{
+    background-color:darkcyan;
+    color: white;
+}
+.tituloModal{
+    text-align: center;
+    font-family: $fuente-Hind;
+}
+.textoMoldal{
+    font-family: $fuente-Montserrat;
+    text-align: justify;
+}
+
+.animacionBotonModal:hover{
+    background-color: $color-purple;
+}
 /*estilos aside Categorias*/
 .formatoCategorias {
     padding: 0px;
@@ -428,7 +459,6 @@ footer {
 
 .seccionPrincipal {
     grid-area: productosGrilla;
-    border: double 1px darkcyan;
 }
 
 .categoriasAside {
@@ -454,7 +484,6 @@ footer {
 
 .productosDescuentos {
     grid-area: productosDescuentos;
-    border: double 1px darkcyan
 }
 
 .seccionImagenes {

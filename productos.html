@@ -28,7 +28,6 @@
 	<!-- estilos propios css-->
 	<link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
 	<!-- pongo lo que va en el nav -->
 	<header class="container-fluid estiloHeader">
@@ -57,7 +56,6 @@
 							<a class="dropdown-item" href="#">ESPEJOS</a>
 							<a class="dropdown-item" href="#">ALMOHADONES</a>
 							<a class="dropdown-item" href="#">FLORES SECAS</a>
-
 						</div>
 					</li>
 					<li class="nav-item">
@@ -69,7 +67,6 @@
 					<li class="nav-item">
 						<a class="nav-link" href="contactanos.html">CONTACTANOS</a>
 					</li>
-
 				</ul>
 			</div>
 		</nav>
@@ -77,49 +74,52 @@
 	<!-- este es el título no se bien dentro de que ponerlo -->
 	<main>
 		<!-- Button trigger modal -->
-		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
-			Launch static backdrop modal
+		<button type="button" class="btn formatoModal" data-toggle="modal" data-target="#staticBackdrop">
+			Presiona para mas información sobre venta mayorista
 		</button>
-
 		<!-- Modal -->
 		<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
 			aria-labelledby="staticBackdropLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+			<div class="modal-dialog ">
+				<div class="modal-content modalProductos">
+					<div class="modal-header tituloModal">
+						<h5 class="modal-title" id="staticBackdropLabel">Venta mayorista</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
-					<div class="modal-body">
-						...
+					<div class="modal-body textoMoldal">
+						Si queres obtener mas información sobre las condiciones de venta mayorista dejanos tus datos y nos pondremos en contacto a la brevedad!!
 					</div>
 					<div class="modal-body">
 						<form>
-						  <div class="form-group">
-							<label for="recipient-name" class="col-form-label">Recipient:</label>
-							<input type="text" class="form-control" id="recipient-name">
-						  </div>
-						  <div>
-							<label for="email"> Email:</label>
-							<input type="mail" name="email" placeholder="robertoperez@gmail.com" />
-						</div>
-						  <div class="form-group">
-							<label for="message-text" class="col-form-label">Message:</label>
-							<textarea class="form-control" id="message-text"></textarea>
-						  </div>
+							<div class="form-group row">
+								<label for="staticName" class="col-sm-2 col-form-label">Nombre</label>
+								<div class="col-sm-10">
+									<input type="text" readonly class="form-control-plaintext" id="staticName"
+										value="Ingresa tu nombre">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+								<div class="col-sm-10">
+									<input type="text" readonly class="form-control-plaintext" id="staticEmail"
+										value="email@example.com">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="message-text" class="col-form-label">Mensaje:</label>
+								<textarea class="form-control" id="message-text"></textarea>
+							</div>
 						</form>
-					  </div>
+					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary">Understood</button>
+						<button type="button" class="btn btn-secondary animacionBotonModal" data-dismiss="modal">Cerrar</button>
+						<button type="button" class="btn btn-secondary animacionBotonModal">Enviar</button>
 					</div>
 				</div>
 			</div>
 		</div>
-
-
 		<div class="grillaProductos">
 			<section class="seccionPrincipal">
 				<div class="tituloGrillaProductos">
@@ -268,28 +268,35 @@
 		</div>
 	</main>
 	<!-- final de página -->
-	<footer class="container-fluid ordenFooter ">
-		<div class="row footerMaxSize">
-			<section class="col-md-4 newsletter">
-				<h3>Newsletter</h3>
-				<div class="d-flex justify-content-center">
-					<form>
-						<div class="form-group estiloInput ">
-							<input type="password" class="form-control" id="pwd" placeholder="Nombre" name="pswd">
+	<div class="container-fluid formatoNewsletter">
+		<div class="row">
+			<section class=" col-md-6 tituloNewsletter">
+				<h3>Eneterate de todas las novedades y recibí ofertas únicas</h3>
+			</section>
+			<section class="col-md-6 newsletter">
+				<div class=" container-fluid d-flex justify-content-start ">
+					<form class="row">
+						<div class="col-md-8">
+							<div class="form-group estiloInput ">
+								<input type="password" class="form-control" id="pwd" placeholder="Nombre" name="pswd">
+							</div>
+							<div class="form-group estiloInput">
+								<input type="email" class="form-control" id="email" placeholder="Enter email"
+									name="email">
+							</div>
 						</div>
-						<div class="form-group estiloInput">
-							<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-						</div>
-						<div class="d-flex justify-content-end">
+						<div class="d-flex justify-content-center col-md-4 ">
 							<button type="submit" class="btn btn-secondary text-white ">Suscribirse</button>
 						</div>
 					</form>
 				</div>
 			</section>
-			<section class="col-md-4  d-flex justify-content-center align-items-end derechosReservados">
-				<p>derechos reservados María Florencia Martínez</p>
-			</section>
-			<section class="col-md-4 estiloRedes">
+		</div>
+	</div>
+	<footer class="container-fluid ordenFooter ">
+		<div class="row footerMaxSize">
+
+			<section class="col-md-12 estiloRedes">
 				<span>Sigamos en contacto </span>
 				<ul>
 					<li> <a class="fb-ic mr-3" role="button" href="https://www.facebook.com/somoscretahome"
@@ -306,11 +313,14 @@
 							target="_blank"><i class="far fa-lg fa-envelope"></i></a>
 					</li>
 				</ul>
+			</section>
+			<section class="col-md-12  d-flex justify-content-center align-items-end derechosReservados">
+				<p>derechos reservados María Florencia Martínez</p>
 			</section>
 		</div>
 		<div class="row footerMinSize">
 			<section class="col-12 estiloRedes">
-				<span>Sigamos en contacto </span>
+				<span>Sigamos en contacto!!</span>
 				<ul>
 					<li> <a class="fb-ic mr-3" role="button" href="https://www.facebook.com/somoscretahome"
 							target="_blank">
@@ -327,10 +337,10 @@
 					</li>
 				</ul>
 			</section>
-			<section class="col-12 newsletter">
-				<h3>Newsletter</h3>
-				<div class="d-flex justify-content-center">
-					<form>
+			<section class="col-12 newsletterMinSize">
+				<h3>Recibí ofertas únicas</h3>
+				<div class="d-flex justify-content-center ">
+					<form class="formMinSize">
 						<div class="form-group estiloInput ">
 							<input type="password" class="form-control" id="pwd" placeholder="Nombre" name="pswd">
 						</div>

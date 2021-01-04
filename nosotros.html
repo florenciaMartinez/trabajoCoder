@@ -135,28 +135,35 @@
 		</div>
 	</main>
 	<!-- final de página -->
-	<footer class="container-fluid ordenFooter ">
-		<div class="row footerMaxSize">
-			<section class="col-md-4 newsletter">
-				<h3>Newsletter</h3>
-				<div class="d-flex justify-content-center">
-					<form>
-						<div class="form-group estiloInput ">
-							<input type="password" class="form-control" id="pwd" placeholder="Nombre" name="pswd">
+	<div class="container-fluid formatoNewsletter">
+		<div class="row">
+			<section class=" col-md-6 tituloNewsletter">
+				<h3>Eneterate de todas las novedades y recibí ofertas únicas</h3>
+			</section>
+			<section class="col-md-6 newsletter">
+				<div class=" container-fluid d-flex justify-content-start ">
+					<form class="row">
+						<div class="col-md-8">
+							<div class="form-group estiloInput ">
+								<input type="password" class="form-control" id="pwd" placeholder="Nombre" name="pswd">
+							</div>
+							<div class="form-group estiloInput">
+								<input type="email" class="form-control" id="email" placeholder="Enter email"
+									name="email">
+							</div>
 						</div>
-						<div class="form-group estiloInput">
-							<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-						</div>
-						<div class="d-flex justify-content-end">
+						<div class="d-flex justify-content-center col-md-4 ">
 							<button type="submit" class="btn btn-secondary text-white ">Suscribirse</button>
 						</div>
 					</form>
 				</div>
 			</section>
-			<section class="col-md-4  d-flex justify-content-center align-items-end derechosReservados">
-				<p>derechos reservados María Florencia Martínez</p>
-			</section>
-			<section class="col-md-4 estiloRedes">
+		</div>
+	</div>
+	<footer class="container-fluid ordenFooter ">
+		<div class="row footerMaxSize">
+
+			<section class="col-md-12 estiloRedes">
 				<span>Sigamos en contacto </span>
 				<ul>
 					<li> <a class="fb-ic mr-3" role="button" href="https://www.facebook.com/somoscretahome"
@@ -173,11 +180,14 @@
 							target="_blank"><i class="far fa-lg fa-envelope"></i></a>
 					</li>
 				</ul>
+			</section>
+			<section class="col-md-12  d-flex justify-content-center align-items-end derechosReservados">
+				<p>derechos reservados María Florencia Martínez</p>
 			</section>
 		</div>
 		<div class="row footerMinSize">
 			<section class="col-12 estiloRedes">
-				<span>Sigamos en contacto </span>
+				<span>Sigamos en contacto!!</span>
 				<ul>
 					<li> <a class="fb-ic mr-3" role="button" href="https://www.facebook.com/somoscretahome"
 							target="_blank">
@@ -194,10 +204,10 @@
 					</li>
 				</ul>
 			</section>
-			<section class="col-12 newsletter">
-				<h3>Newsletter</h3>
-				<div class="d-flex justify-content-center">
-					<form>
+			<section class="col-12 newsletterMinSize">
+				<h3>Recibí ofertas únicas</h3>
+				<div class="d-flex justify-content-center ">
+					<form class="formMinSize">
 						<div class="form-group estiloInput ">
 							<input type="password" class="form-control" id="pwd" placeholder="Nombre" name="pswd">
 						</div>

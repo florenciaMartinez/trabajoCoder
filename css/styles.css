@@ -64,7 +64,8 @@ footer {
   background-image: url("https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff"); }
 
 .estiloHeader {
-  padding: 0; }
+  padding: 0;
+  background-color: darkcyan; }
 
 /*Aplicado al footer*/
 .ordenFooter {
@@ -254,6 +255,7 @@ footer {
   font-weight: bold; }
 
 /*responsive al index*/
+/*tamanio celular*/
 @media (max-width: 575.98px) {
   .logoNav img {
     width: 200px; }
@@ -271,8 +273,11 @@ footer {
       .estiloRedes ul li {
         padding: 30%; }
   .estiloRedes .derechosReservados p {
-    margin-top: 12px; } }
+    margin-top: 12px; }
+  .ubicacionCards {
+    width: 100%; } }
 
+/*tamanio PC*/
 @media (min-width: 576px) {
   .footerMinSize {
     display: none; }
@@ -280,6 +285,31 @@ footer {
     display: none; } }
 
 /*Aplicado a productos*/
+/*Estilo Modal*/
+.formatoModal {
+  background-color: dimgray;
+  width: 100%;
+  border-radius: 0%;
+  color: withe;
+  color: white; }
+  .formatoModal:hover {
+    background-color: deepskyblue; }
+
+.modalProductos {
+  background-color: darkcyan;
+  color: white; }
+
+.tituloModal {
+  text-align: center;
+  font-family: "Hind", sans-serif; }
+
+.textoMoldal {
+  font-family: "Montserrat", sans-serif;
+  text-align: justify; }
+
+.animacionBotonModal:hover {
+  background-color: #e2d2c7; }
+
 /*estilos aside Categorias*/
 .formatoCategorias {
   padding: 0px; }
@@ -304,8 +334,7 @@ footer {
   grid-row-gap: 10px; }
 
 .seccionPrincipal {
-  grid-area: productosGrilla;
-  border: double 1px darkcyan; }
+  grid-area: productosGrilla; }
 
 .categoriasAside {
   display: flex;
@@ -319,8 +348,7 @@ footer {
     margin: 35px 0px 0px 0px; }
 
 .productosDescuentos {
-  grid-area: productosDescuentos;
-  border: double 1px darkcyan; }
+  grid-area: productosDescuentos; }
 
 .seccionImagenes {
   display: grid;
