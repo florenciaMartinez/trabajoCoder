@@ -5,7 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Creta Home - Contactanos</title>
-	<meta name="keywords"  content="decoración del hogar, almohadones, espejos, mantas, manteles, buenos aires, gba sur, envios a todo el pais, venta online ">
+	<meta name="keywords"
+		content="decoración del hogar, almohadones, espejos, mantas, manteles, buenos aires, gba sur, envios a todo el pais, venta online ">
 	<meta name="description" content="Estamos en GBA Sur, Argentina, y hacemos envíos a todo el país. Contactanos!">
 	<meta name="city" content="Buenos Aires">
 	<meta name="country" content="Argentina">
@@ -20,7 +21,7 @@
 		rel="stylesheet">
 	<!-- bootstrap 4.5-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<!-- iconos-->	
+	<!-- iconos-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
 		integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<!-- estilos propios css-->
@@ -40,7 +41,7 @@
 				aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon imagenMenuHamburguesa"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<div class="collapse navbar-collapse estiloBarra" id="navbarNavDropdown">
 				<ul class="navbar-nav ml-auto estiloNav">
 					<li class="nav-item active">
 						<a class="nav-link" href="index.html">INICIO <span class="sr-only">(current)</span></a>
@@ -70,80 +71,54 @@
 			</div>
 		</nav>
 	</header>
-
 	<main>
-		
 		<div>
 			<h2 class="titulosPrincipales"> CONTACTANOS </h2>
 		</div>
-		<section class="ordenContacto container">
-			<div class="row">
-				<article class="col-md-6 col-12 d-flex align-conten-center flex-column cuadroDatos ">
-					<div class="textoContacto">
-						<p> Si tenes alguna duda y queres contactarnos podes hacerlo por WhatsApp o por Email</p>
-					</div>
-					<div class="datosContacto">
-						<div class="wathsapp">
-							<ul>
-								<li><a href="https://api.whatsapp.com/send?phone=5491162489798&text=Hola!%20Te%20contacto%20desde%20la%20Web"
-										target="_blank">WhatsApp</a></li>
-							</ul>
+		<section>
+			<p>Podemos ayudarte con algo? Escribinos!</p>
+			<form class="container">
+				<div class="row d-flex justify-content-end">
+					<div class="col-md-6">
+						<div class="form">
+							<div class="form-group">
+							<label for=" inputName">Name</label>
+								<input type="password" class="form-control" id="inputName">
+							</div>
 						</div>
-						<div class="email">
-							<ul>
-								<li><a href="mailto:info.cretahome@gmail.com" target="_blank">Email</a></li>
-							</ul>
+						<div class="form-row">
+							<div class="form-group">
+								<label for="inputEmail4">Email</label>
+								<input type="email" class="form-control" id="inputEmail4">
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="gridCheck">
+								<label class="form-check-label" for="gridCheck">
+									Acepta recibir emails con promociones
+								</label>
+							</div>
 						</div>
 					</div>
-				</article>
-				<!-- Este es el formulario de contacto-->
-				<article class="col-md-6 col-12 d-flex align-items-center flex-column  ordenFormulario">
-					<section class="textoFormulario">
-						<p> O también podes dejarnos un mesaje y te responderemos cuanto antes</p>
-					</section>
-					<section class="datosFormulario">
-						<form>
-							<div>
-								<label for="nombreApellido"> Nombre y Apellido:</label>
-								<input type="text" name="nombreApellido" placeholder="Roberto Perez" />
-							</div>
-							<div>
-								<label for="genero">Género</label>
-								<select name="genero">
-									<option value="F">Seleccionar</option>
-									<option value="F">Femenino</option>
-									<option value="M">Masculino</option>
-									<option value="O">Otro</option>
-								</select>
-							</div>
-							<div>
-								<label for="edad"> Edad</label>
-								<input type="radio" name="edad" value="18 a 25"> Entre 18 y 25</>
-								<input type="radio" name="edad" value="26 a 35"> Entre 26 y 35</>
-								<input type="radio" name="edad" value="36"> Mas de 36</>
-							</div>
-							<div>
-								<label for="email"> Email:</label>
-								<input type="mail" name="email" placeholder="robertoperez@gmail.com" />
-							</div>
-							<div>
-								<label for="acepta">Acepta recibir emails con promociones</label>
-								<input type="checkbox" name="acepta" value="1" />
-							</div>
-							<div>
-								<label for="comentarios"> Dejanos tu mensaje:</label>
-								<br>
-								<textarea class="mensajeContacto"  name="comentarios" rows="10" cols="40"></textarea>
-							</div>
-							<div class="estiloBotonesForm">
-								<input type="reset" value="Limpiar" />
-								<input type="submit" value="Enviar" />
-							</div>
-						</form>
-					</section>
-				</article>
+					<div class="form-group col-md-6">
+						<label for="exampleFormControlTextarea1">Example textarea</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary d-flex">Submit</button>
+				</div>
+			</form>
+		</section>
+		<section>
+			<p>Atentido por humanos !! mandanos un whatsapp y te respondemos cuanto antes!!</p>
+			<div class="wathsapp">
+				<ul>
+					<li><a href="https://api.whatsapp.com/send?phone=5491162489798&text=Hola!%20Te%20contacto%20desde%20la%20Web"
+							target="_blank">WhatsApp</a></li>
+				</ul>
 			</div>
 		</section>
+
 		<section class="ubicacionContacto">
 			<p>¿DÓNDE ESTAMOS?</p>
 			<p>Estamos en el centro de Quilmes, en GBA Sur. No tenemos local pero hacemos envíos a todo el país y gratis
@@ -155,7 +130,7 @@
 		</section>
 		<div class="btn-whatsapp">
 			<a href="https://api.whatsapp.com/send?phone=541162489798" target="_blank">
-			<img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="">
+				<img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="">
 			</a>
 		</div>
 	</main>

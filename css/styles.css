@@ -50,6 +50,9 @@ footer {
     background-color: #e2d2c7;
     color: white; }
 
+.estiloBarra {
+  background-color: darkcyan; }
+
 .estiloSubmenu {
   background-color: darkcyan; }
 
@@ -64,8 +67,7 @@ footer {
   background-image: url("https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff"); }
 
 .estiloHeader {
-  padding: 0;
-  background-color: darkcyan; }
+  padding: 0; }
 
 /*Aplicado al footer*/
 .ordenFooter {
@@ -287,7 +289,7 @@ footer {
 /*Aplicado a productos*/
 /*Estilo Modal*/
 .formatoModal {
-  background-color: dimgray;
+  background-color: #6b989f;
   width: 100%;
   border-radius: 0%;
   color: withe;

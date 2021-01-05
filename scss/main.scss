@@ -83,7 +83,9 @@ footer {
 
     }
 }
-
+.estiloBarra{
+    background-color: darkcyan;
+}
 .estiloSubmenu {
     background-color: darkcyan;
 }
@@ -103,7 +105,6 @@ footer {
 
 .estiloHeader {
     padding: 0;
-    background-color: darkcyan;
 }
 
 /*Aplicado al footer*/
@@ -393,7 +394,7 @@ footer {
 
 /*Estilo Modal*/
 .formatoModal{
-    background-color: dimgray;
+    background-color: rgb(107, 152, 159);
     width: 100%;
     border-radius: 0%;
     color: withe;
