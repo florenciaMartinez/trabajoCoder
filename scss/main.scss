@@ -348,15 +348,14 @@ footer {
     .footerMaxSize {
         display: none;
     }
+
     .formatoNewsletter{
         display: none;
-        
     }
 
     .carouselMaxSize {
         display: none;
     }
-
     .estiloRedes {
         display: flex;
         justify-content: start;
@@ -376,6 +375,7 @@ footer {
     .ubicacionCards{
         width: 100%;
     }
+
 }
 /*tamanio PC*/
 @media (min-width: 576px) {
@@ -762,4 +762,10 @@ footer {
     color: white;
     background-color: darkcyan;
     margin-top: 10PX;
+}
+@media (max-width: 575.98px){
+    .subtituloContacto p{
+        font-size: 125%;
+        margin: 0px 0px 10px 0px;
+    }
 }
