@@ -706,100 +706,17 @@ footer {
 }
 
 /*Aplicado a Contactanos*/
-.textoContacto p {
-    text-align: center;
-    font-family: 'Montserrat', san-serif;
-    padding: 2%;
-    font-size: 140%;
+
+.wathsapp  a {
     color: white;
-
-}
-
-
-.ordenContacto {
-    display: flex;
-}
-
-.datosContacto {
-    display: flex;
-    align-items: end;
-    flex-direction: column;
-    font-size: 170%;
-
-    ul li a {
-        text-decoration: none;
-        list-style: none;
-        color: white;
-    }
-}
-
-.wathsapp ul {
-    padding-left: 65px;
-
-    li {
-        list-style: url("../imagenes/logoWhatsapp.png");
-        transition: all 0.5s;
-
-        &:hover {
-            transform: scale(1.5, 1.5);
-        }
-    }
-}
-
-.email ul {
-    padding-left: 65px;
-
-    li {
-        list-style: url("../imagenes/logoMail.png");
-        padding: 30px;
-        transition: all 0.5s;
-
-        &:hover {
-            transform: scale(1.5, 1.5);
-        }
-    }
-}
-
-
-.cuadroDatos {
-    background-image: url("../imagenes/fondoContacto.jpg");
-
-}
-
-.ordenFormulario {
-
-    font-family: 'Montserrat', san-serif;
-}
-
-.textoFormulario p {
-    text-align: center;
-    font-size: 150%;
-}
-
-.datosFormulario {
-    font-size: 110%;
-    line-height: 150%;
-    border: double 1px darkcyan;
-    padding: 10px;
-    background-color: #e2d2c7;
-    color: gray;
-}
-
-@media (max-width: 575.98px) {
-    .datosFormulario {
-        width: 300px;
-    }
-
-    .mensajeContacto {
-        width: 270px;
-    }
-}
+    font-family: $fuente-Hind;
+}    
 
 .ubicacionContacto {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Hind', sans-serif;
+    font-family: $fuente-Hind;
     background-color: #E7E7E6;
     margin-top: 10px;
     color: black;
@@ -816,12 +733,33 @@ footer {
     }
 }
 
-.estiloBotonesForm input {
+.subtituloContacto p{
+    text-align: center;
+    font-size: 160%;
+    color:gray;
+    font-family: $fuente-Montserrat;
+    background:$color-purple;
+    margin: 10px 102px 10px 102px;
+}
+.estiloFormulario{
     background-color: $color-purple;
+    font-family: $fuente-Montserrat;
+    font-size: 110%;
     color: gray;
-
-    &:hover {
-        background-color: darkcyan;
-        color: white;
-    }
+}
+.eMailSize{
+    width: 100%;
+}
+.btnForm{
+    margin: 10px;
+    background: darkcyan;
+    font-family: 'Montserrat';
+    border: 0;
+    color: white;
+}
+.textoContacto{
+    text-align: center;
+    color: white;
+    background-color: darkcyan;
+    margin-top: 10PX;
 }
