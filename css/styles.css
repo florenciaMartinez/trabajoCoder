@@ -3,8 +3,8 @@
 /*aplicado a todos los html*/
 body {
   max-height: 2500px;
-  min-height: 1000px;
-  padding-bottom: 180px;
+  min-height: 800px;
+  padding-bottom: 10px;
   position: relative; }
 
 @media (max-width: 575.98px) {
@@ -17,7 +17,7 @@ body {
     text-align: center;
     position: 0; } }
 
-footer {
+footer .formatoNewsletter {
   margin-top: 100px;
   position: absolute;
   bottom: 0;
@@ -94,7 +94,7 @@ footer {
   align-items: center; }
   .newsletterMinSize h3 {
     color: white;
-    font-size: 250%;
+    font-size: 200%;
     text-align: center; }
 
 .formMinSize {

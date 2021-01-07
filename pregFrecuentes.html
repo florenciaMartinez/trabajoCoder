@@ -1,228 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Creta Home - Productos </title>
-        <meta name="keywords"
-            content="decoración del hogar, almohadones, espejos, mantas, manteles, venta online, envio gratis, cuotas sin interes, envios a todo el pais, compra online">
-        <meta name="description"
-            content="Compra online.  Disfruta de cuotas sin interes y envío gratis en compras mayores a $4000">
-        <meta name="city" content="Buenos Aires">
-        <meta name="country" content="Argentina">
-        <meta name="geography" content="Quilmes, Buenos Aires, Argentina">
-        <meta name="author" content="Florencia Martínez" />
-        <!-- favicon-->
-        <link rel="shortcut icon" type="image/x-icon" href="imagenes/fav-icon.ico">
-        <!-- animaciones-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <!-- estilos de fuentes-->
-        <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;500&family=Montserrat:wght@300;600&display=swap"
-            rel="stylesheet">
-        <!-- bootstrap 5-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        <!-- iconos-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-            integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-        <!-- estilos propios css-->
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creta Home - Productos </title>
+    <meta name="keywords"
+        content="decoración del hogar, almohadones, espejos, mantas, manteles, venta online, envio gratis, cuotas sin interes, envios a todo el pais, compra online">
+    <meta name="description"
+        content="Compra online.  Disfruta de cuotas sin interes y envío gratis en compras mayores a $4000">
+    <meta name="city" content="Buenos Aires">
+    <meta name="country" content="Argentina">
+    <meta name="geography" content="Quilmes, Buenos Aires, Argentina">
+    <meta name="author" content="Florencia Martínez" />
+    <!-- favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="imagenes/fav-icon.ico">
+    <!-- animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- estilos de fuentes-->
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;500&family=Montserrat:wght@300;600&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- iconos-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- estilos propios css-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
 <body>
     <!-- pongo lo que va en el nav -->
     <header class="container-fluid estiloHeader">
-	<nav class="navbar navbar-expand-lg contenedorNav">
-        <a class="navbar-brand logoNav" href="index.html">
-            <img src="imagenes/logo.png " alt="logo">
-        </a>
-        <div class="container-fluid">
-    
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto estiloNav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown link
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <nav class="navbar navbar-expand-lg contenedorNav">
+            <a class="navbar-brand logoNav" href="index.html">
+                <img src="imagenes/logo.png " alt="logo">
+            </a>
+
+
+            <button class="navbar-toggler menuHamburguesa" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon imagenMenuHamburguesa"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end estiloBarra" id="navbarNavDropdown">
+                <ul class="navbar-nav  estiloNav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PRODUCTOS
+                        </a>
+                        <ul class="dropdown-menu estiloSubmenu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="productos.html">VER TODOS</a></li>
+                            <li><a class="dropdown-item" href="#">ESPEJOS</a></li>
+                            <li><a class="dropdown-item" href="#">ALMOHADONES</a></li>
+                            <li><a class="dropdown-item" href="#">FLORES SECAS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pregFrecuentes.html">PREGUNTAS FRECUENTES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactanos.html">CONTACTANOS</a>
+                    </li>
+
                 </ul>
-              </li>
-            </ul>
-          </div>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Métodos de pago
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Podes abonar tus compras de varias formas</strong>
+                        <ul>
+                            <li>En efectivo con un 15 % de descuento, solo para lugares en los que entregamos nosotros.
+                                (Quilmes, Fcio Varela y Berazategui)</li>
+                            <li>Por transferencia bancaria con un 10% de descuento</li>
+                            <li>Por mercado pago con debito o credito</li>
+                            <li>Por mobbex solicitando tu link de pago </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Zonas de envíos en 24 hs
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Este tipo de envíos es solo por mensajeria privada y la realizamos en las siguientes
+                            zonas</strong>
+                        <ul>
+                            <li>Gra Sur, costo de envío $300</li>
+                            <li>Caba, costo de envío $600</li>
+                            <li>La Plata, costo de envio $800</li>
+                        </ul>
+                        <samp>Tene en cuenta que estos envios son solo para productos que se puedan llevar en
+                            moto</samp>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Formas de envío
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Podes seleccionar la opción que prefieras una vez finalizada tu compra.</strong>
+                        <ul>
+                            <li>Moto o mensajería privada, con la que trabajamos habitualmente</li>
+                            <li>Correo Argentino</li>
+                            <li>Oca</li>
+                            <li>Podes enviar vos un Beat o la mensajeria que prefieras a nuestro depósito</li>
+                        </ul>
+                        <p>Es importante que sepas que en caso que el producto no llegue en condiciones adecuadas solo
+                            nos haremos cargo en las mensajerias con las que trabajamos de forma habitual</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </nav>
-      </header>
-    	<!-- final de página -->
-	<div class="container-fluid formatoNewsletter">
-		<div class="row">
-			<section class=" col-md-6 tituloNewsletter">
-				<h3>Eneterate de todas las novedades y recibí ofertas únicas</h3>
-			</section>
-			<section class="col-md-6 newsletter">
-				<div class=" container-fluid d-flex justify-content-start ">
-					<form class="row">
-						<div class="col-md-8">
-							<div class="form-group estiloInput ">
-								<input type="password" class="form-control" id="pwd" placeholder="Nombre" name="pswd">
-							</div>
-							<div class="form-group estiloInput">
-								<input type="email" class="form-control" id="email" placeholder="Enter email"
-									name="email">
-							</div>
-						</div>
-						<div class="d-flex justify-content-center col-md-4 ">
-							<button type="submit" class="btn btn-secondary text-white ">Suscribirse</button>
-						</div>
-					</form>
-				</div>
-			</section>
-		</div>
-	</div>
-	<footer class="container-fluid ordenFooter ">
-		<div class="row footerMaxSize">
-			<section class="col-md-12 estiloRedes">
-				<span>Sigamos en contacto </span>
-				<ul>
-					<li> <a class="fb-ic mr-3" role="button" href="https://www.facebook.com/somoscretahome"
-							target="_blank">
-							<i class="fab fa-lg fa-facebook-f"> </i>
-						</a>
-					</li>
-					<li>
-						<a class="ins-ic mr-3" role="button" href="https://www.instagram.com/creta_ok/"
-							target="_blank"><i class="fab fa-lg fa-instagram"></i></a>
-					</li>
-					<li>
-						<a class="email-ic mr-3 " role="button" href="mailto:info.cretahome@gmail.com"
-							target="_blank"><i class="far fa-lg fa-envelope"></i></a>
-					</li>
-				</ul>
-			</section>
-			<section class="col-md-12  d-flex justify-content-center align-items-end derechosReservados">
-				<p>derechos reservados María Florencia Martínez</p>
-			</section>
-		</div>
-		<div class="row footerMinSize">
-			<section class="col-12 estiloRedes">
-				<span>Sigamos en contacto!!</span>
-				<ul>
-					<li> <a class="fb-ic mr-3" role="button" href="https://www.facebook.com/somoscretahome"
-							target="_blank">
-							<i class="fab fa-lg fa-facebook-f"> </i>
-						</a>
-					</li>
-					<li>
-						<a class="ins-ic mr-3" role="button" href="https://www.instagram.com/creta_ok/"
-							target="_blank"><i class="fab fa-lg fa-instagram"></i></a>
-					</li>
-					<li>
-						<a class="email-ic mr-3 " role="button" href="mailto:info.cretahome@gmail.com"
-							target="_blank"><i class="far fa-lg fa-envelope"></i></a>
-					</li>
-				</ul>
-			</section>
-			<section class="col-12 newsletterMinSize">
-				<h3>Recibí ofertas únicas</h3>
-				<div class="d-flex justify-content-center ">
-					<form class="formMinSize">
-						<div class="form-group estiloInput ">
-							<input type="password" class="form-control" id="pwd" placeholder="Nombre" name="pswd">
-						</div>
-						<div class="form-group estiloInput">
-							<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-						</div>
-						<div class="d-flex justify-content-center">
-							<button type="submit" class="btn btn-secondary text-white ">Suscribirse</button>
-						</div>
-					</form>
-				</div>
-			</section>
-			<section class="col-12  d-flex justify-content-center align-items-end derechosReservados">
-				<p>derechos reservados María Florencia Martínez</p>
-			</section>
-		</div>
-	</footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-</body>
-</html>
-<section class="ordenContacto container">
-    <div class="row">
-        <article class="col-md-6 col-12 d-flex align-conten-center flex-column cuadroDatos ">
-            <div class="textoContacto">
-                <p> Si tenes alguna duda y queres contactarnos podes hacerlo por WhatsApp o por Email</p>
-            </div>
-            <div class="datosContacto">
-                <div class="wathsapp">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Que pasa si mi producto no llega en buen estado
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Dependiendo de la forma de envío</strong>
                     <ul>
-                        <li><a href="https://api.whatsapp.com/send?phone=5491162489798&text=Hola!%20Te%20contacto%20desde%20la%20Web"
-                                target="_blank">WhatsApp</a></li>
+                        <li>Te devolvemos el dinero</li>
+                        <li>Te cambiamos el producto</li>
                     </ul>
-                </div>
-                <div class="email">
-                    <ul>
-                        <li><a href="mailto:info.cretahome@gmail.com" target="_blank">Email</a></li>
-                    </ul>
+                    <p>Recordá, que no nos hacemos responsables si vos enviaste mensajería a buscarlo</p>
                 </div>
             </div>
-        </article>
-        <!-- Este es el formulario de contacto-->
-        <article class="col-md-6 col-12 d-flex align-items-center flex-column  ordenFormulario">
-            <section class="textoFormulario">
-                <p> O también podes dejarnos un mesaje y te responderemos cuanto antes</p>
+        </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    El producto no es lo que parecía en las fotos
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Si no cumple con tus expectativas</strong>
+                    <p>Tenes 3 días hábiles para solicitar la devolución. En este caso el costo de envío queda a cargo del comprador.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="btn-whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=541162489798" target="_blank">
+                <img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="">
+            </a>
+        </div>
+    </main>
+    <!-- final de página -->
+    <div class="container-fluid formatoNewsletter">
+        <div class="row">
+            <section class=" col-md-6 tituloNewsletter">
+                <h3>Eneterate de todas las novedades y recibí ofertas únicas</h3>
             </section>
-            <section class="datosFormulario">
-                <form>
-                    <div>
-                        <label for="nombreApellido"> Nombre y Apellido:</label>
-                        <input type="text" name="nombreApellido" placeholder="Roberto Perez" />
-                    </div>
-                    <div>
-                        <label for="genero">Género</label>
-                        <select name="genero">
-                            <option value="F">Seleccionar</option>
-                            <option value="F">Femenino</option>
-                            <option value="M">Masculino</option>
-                            <option value="O">Otro</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="edad"> Edad</label>
-                        <input type="radio" name="edad" value="18 a 25"> Entre 18 y 25</>
-                        <input type="radio" name="edad" value="26 a 35"> Entre 26 y 35</>
-                        <input type="radio" name="edad" value="36"> Mas de 36</>
-                    </div>
-                    <div>
-                        <label for="email"> Email:</label>
-                        <input type="mail" name="email" placeholder="robertoperez@gmail.com" />
-                    </div>
-                    <div>
-                        <label for="acepta">Acepta recibir emails con promociones</label>
-                        <input type="checkbox" name="acepta" value="1" />
-                    </div>
-                    <div>
-                        <label for="comentarios"> Dejanos tu mensaje:</label>
-                        <br>
-                        <textarea class="mensajeContacto"  name="comentarios" rows="10" cols="40"></textarea>
-                    </div>
-                    <div class="estiloBotonesForm">
-                        <input type="reset" value="Limpiar" />
-                        <input type="submit" value="Enviar" />
-                    </div>
-                </form>
+            <section class="col-md-6 newsletter">
+                <div class=" container-fluid d-flex justify-content-start ">
+                    <form class="row">
+                        <div class="col-md-8">
+                            <div class="form-group estiloInput ">
+                                <input type="password" class="form-control" id="pwd" placeholder="Nombre" name="pswd">
+                            </div>
+                            <div class="form-group estiloInput">
+                                <input type="email" class="form-control" id="email" placeholder="Enter email"
+                                    name="email">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center col-md-4 ">
+                            <button type="submit" class="btn btn-secondary text-white ">Suscribirse</button>
+                        </div>
+                    </form>
+                </div>
             </section>
-        </article>
+        </div>
     </div>
-</section>
+    <footer class="container-fluid ordenFooter ">
+        <div class="row footerMaxSize">
+            <section class="col-md-12 estiloRedes">
+                <span>Sigamos en contacto </span>
+                <ul>
+                    <li> <a class="fb-ic mr-3" role="button" href="https://www.facebook.com/somoscretahome"
+                            target="_blank">
+                            <i class="fab fa-lg fa-facebook-f"> </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ins-ic mr-3" role="button" href="https://www.instagram.com/creta_ok/"
+                            target="_blank"><i class="fab fa-lg fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a class="email-ic mr-3 " role="button" href="mailto:info.cretahome@gmail.com"
+                            target="_blank"><i class="far fa-lg fa-envelope"></i></a>
+                    </li>
+                </ul>
+            </section>
+            <section class="col-md-12  d-flex justify-content-center align-items-end derechosReservados">
+                <p>derechos reservados María Florencia Martínez</p>
+            </section>
+        </div>
+        <div class="row footerMinSize">
+            <section class="col-12 estiloRedes">
+                <span>Sigamos en contacto!!</span>
+                <ul>
+                    <li> <a class="fb-ic mr-3" role="button" href="https://www.facebook.com/somoscretahome"
+                            target="_blank">
+                            <i class="fab fa-lg fa-facebook-f"> </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ins-ic mr-3" role="button" href="https://www.instagram.com/creta_ok/"
+                            target="_blank"><i class="fab fa-lg fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a class="email-ic mr-3 " role="button" href="mailto:info.cretahome@gmail.com"
+                            target="_blank"><i class="far fa-lg fa-envelope"></i></a>
+                    </li>
+                </ul>
+            </section>
+            <section class="col-12 newsletterMinSize">
+                <h3>Recibí ofertas únicas</h3>
+                <div class="d-flex justify-content-center ">
+                    <form class="formMinSize">
+                        <div class="form-group estiloInput ">
+                            <input type="password" class="form-control" id="pwd" placeholder="Nombre" name="pswd">
+                        </div>
+                        <div class="form-group estiloInput">
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-secondary text-white ">Suscribirse</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="col-12  d-flex justify-content-center align-items-end derechosReservados">
+                <p>derechos reservados María Florencia Martínez</p>
+            </section>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

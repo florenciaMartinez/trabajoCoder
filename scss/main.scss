@@ -28,8 +28,8 @@ sans-serif;
 /*aplicado a todos los html*/
 body {
     max-height: 2500px;
-    min-height: 1000px;
-    padding-bottom: 180px;
+    min-height: 800px;
+    padding-bottom: 10px;
     position: relative;
 }
 
@@ -47,7 +47,7 @@ body {
     }
 }
 
-footer {
+footer .formatoNewsletter {
     margin-top: 100px;
     position: absolute;
     bottom: 0;
@@ -135,7 +135,7 @@ footer {
     align-items: center;
     h3{
         color: white;
-        font-size: 250%;
+        font-size: 200%;
         text-align: center;
     }
 }
