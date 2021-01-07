@@ -18,9 +18,9 @@ body {
     text-align: center;
     position: 0; }
     .estiloNav li {
-      width: 500px; }
+      width: 100% !important; }
   .estiloSubmenu {
-    position: absolute;
+    position: absolute !important;
     font-size: 100%;
     min-width: 21.5rem;
     text-align: center;
@@ -104,13 +104,12 @@ footer .formatoNewsletter {
   font-size: 80%; }
 
 .newsletter {
-  background-color: darkcyan;
   height: 200px;
   display: flex;
   align-items: center; }
 
 .newsletterMinSize {
-  background-color: darkcyan;
+  background-image: url("../imagenes/ejemplo10.png");
   height: 200px;
   display: flex;
   align-items: center; }
@@ -123,7 +122,6 @@ footer .formatoNewsletter {
   width: 140px; }
 
 .tituloNewsletter {
-  background-color: darkcyan;
   display: flex;
   height: 200px;
   align-items: center; }
@@ -134,10 +132,10 @@ footer .formatoNewsletter {
     font-size: 150%; }
 
 .formatoNewsletter {
-  background-color: darkcyan;
   height: 200px;
   margin-right: 0px;
-  margin-left: 0px; }
+  margin-left: 0px;
+  background-image: url("../imagenes/ejemplo10.png"); }
 
 .estiloInput input {
   height: 25px; }
