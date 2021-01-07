@@ -7,6 +7,22 @@ sans-serif;
 $fuente-Montserrat:'Montserrat',
 sans-serif;
 
+
+/*ejemplos de imagenes de fondo*/
+@mixin titulos-fondo{
+    color:white;
+    background-image: url("../imagenes/ejemplo10.png");
+    text-align: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-family: $fuente-Montserrat;
+    font-weight: bold;
+}
+
+
 /*variables de operadores*/
 @mixin formato-titulos {
     color: darkcyan;
@@ -28,7 +44,7 @@ sans-serif;
 /*aplicado a todos los html*/
 body {
     max-height: 2500px;
-    min-height: 800px;
+    min-height: 1000px;
     padding-bottom: 10px;
     position: relative;
 }
@@ -64,6 +80,9 @@ footer .formatoNewsletter {
 /*color de todos los titulos principales*/
 .titulosPrincipales {
     @include formato-titulos;
+}
+.titulosFondo{
+    @include titulos-fondo;
 }
 
 
@@ -375,7 +394,9 @@ footer .formatoNewsletter {
     .ubicacionCards{
         width: 100%;
     }
-
+    .titulosFondo{
+        height: 240px;
+    }
 }
 /*tamanio PC*/
 @media (min-width: 576px) {
