@@ -474,40 +474,23 @@ footer .formatoNewsletter {
 .animate__backInDown {
   animation-duration: 2s; }
 
-/*aplicado a cuidados*/
-.cuidados__imagen--fondo {
-  background-image: url("../imagenes/fondoCuidados.png"); }
-
-.cuidados__imagen--principal img {
-  width: 80%;
-  padding: 0 10% 0 2%; }
-
 .animate__rotateInDownRight {
   animation-duration: 2s; }
 
-.cuidados__texto {
+/*Aplicado a Preguntas Frecuentes*/
+.estiloAcordion:not(.collapsed) {
+  background-color: #e2d2c7;
   color: gray;
-  text-align: center;
-  padding: 0.5%;
-  font-family: 'Montserrat', san-serif;
-  font-size: 120%;
-  font-weight: 700; }
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold; }
 
-.cuidados__lista {
-  padding: 0; }
-  .cuidados__lista ul {
-    margin: 0;
-    list-style: url("../imagenes/cretaTips.png"); }
-    .cuidados__lista ul li {
-      font-family: 'Montserrat', san-serif;
-      color: gray;
-      font-size: 150%;
-      padding: 2%;
-      transition: all 0.5s; }
-      .cuidados__lista ul li:hover {
-        height: 200px;
-        width: 400px;
-        font-size: 250%; }
+.estiloAcordion:focus {
+  border-color: #e2d2c7;
+  box-shadow: none; }
+
+.cuerpoAcordion {
+  font-family: "Montserrat", sans-serif;
+  color: gray; }
 
 /*Aplicado a Contactanos*/
 .wathsapp a {

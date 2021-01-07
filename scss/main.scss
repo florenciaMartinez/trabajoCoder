@@ -588,6 +588,9 @@ footer .formatoNewsletter {
 
 }
 
+
+
+
 /*Animaciones de Productos*/
 
 
@@ -667,20 +670,7 @@ footer .formatoNewsletter {
     animation-duration: 2s;
 }
 
-/*aplicado a cuidados*/
 
-.cuidados__imagen--fondo {
-    background-image: url("../imagenes/fondoCuidados.png");
-
-}
-
-.cuidados__imagen--principal {
-
-    img {
-        width: 80%;
-        padding: 0 10% 0 2%;
-    }
-}
 
 .animate__rotateInDownRight {
 
@@ -689,41 +679,22 @@ footer .formatoNewsletter {
     animation-duration: 2s;
 }
 
-.cuidados__texto {
+/*Aplicado a Preguntas Frecuentes*/
+.estiloAcordion{
+    &:not(.collapsed){
+    background-color:$color-purple;
     color: gray;
-    text-align: center;
-    padding: 0.5%;
-    font-family: 'Montserrat', san-serif;
-    font-size: 120%;
-    font-weight: 700;
-}
-
-.cuidados__lista {
-
-    padding: 0;
-
-
-    ul {
-        margin: 0;
-        list-style: url("../imagenes/cretaTips.png");
-
-
-
-
-        li {
-            font-family: 'Montserrat', san-serif;
-            color: gray;
-            font-size: 150%;
-            padding: 2%;
-            transition: all 0.5s;
-
-            &:hover {
-                height: 200px;
-                width: 400px;
-                font-size: 250%;
-            }
-        }
+    font-family: $fuente-Montserrat;
+    font-weight: bold;
     }
+    &:focus{
+        border-color: $color-purple;
+        box-shadow: none;
+    }
+}
+.cuerpoAcordion{
+    font-family: $fuente-Montserrat;
+    color: gray;
 }
 
 /*Aplicado a Contactanos*/
