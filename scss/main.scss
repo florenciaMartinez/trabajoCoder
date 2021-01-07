@@ -53,8 +53,18 @@ body {
     body {
         padding-bottom: 0;
     }
-
-    .estiloNav .estiloSubmenu {
+    
+    .estiloNav{
+        position: relative;
+        font-size: 100%;
+        min-width: 21.5rem;
+        text-align: center;
+        position: 0;
+        li{
+            width: 500px;
+        }
+    }
+    .estiloSubmenu {
         position: absolute;
         font-size: 100%;
         min-width: 21.5rem;
@@ -62,6 +72,7 @@ body {
         position: 0;
     }
 }
+
 
 footer .formatoNewsletter {
     margin-top: 100px;
@@ -90,6 +101,7 @@ footer .formatoNewsletter {
 .estiloNav li {
     background-color: darkcyan;
     height: ($tamanio*7)+1;
+    width: 200px;
     @include contenido-centrado;
 
     a {
