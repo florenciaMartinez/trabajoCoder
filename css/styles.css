@@ -486,15 +486,17 @@ footer .formatoNewsletter {
   animation-duration: 2s; }
 
 /*Aplicado a Preguntas Frecuentes*/
-.estiloAcordion:not(.collapsed) {
-  background-color: #e2d2c7;
-  color: gray;
+.estiloAcordion {
   font-family: "Montserrat", sans-serif;
   font-weight: bold; }
-
-.estiloAcordion:focus {
-  border-color: #e2d2c7;
-  box-shadow: none; }
+  .estiloAcordion:not(.collapsed) {
+    background-color: #e2d2c7;
+    color: gray;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold; }
+  .estiloAcordion:focus {
+    border-color: #e2d2c7;
+    box-shadow: none; }
 
 .cuerpoAcordion {
   font-family: "Montserrat", sans-serif;

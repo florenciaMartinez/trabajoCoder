@@ -690,6 +690,9 @@ footer .formatoNewsletter {
 
 /*Aplicado a Preguntas Frecuentes*/
 .estiloAcordion{
+    font-family: $fuente-Montserrat;
+    font-weight: bold;
+
     &:not(.collapsed){
     background-color:$color-purple;
     color: gray;
