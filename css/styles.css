@@ -133,9 +133,17 @@ footer .formatoNewsletter {
 .estiloInput input {
   height: 25px; }
 
+.estiloInputBst5 {
+  margin-bottom: 1rem; }
+  .estiloInputBst5 input {
+    height: 25px; }
+
 .footerMaxSize {
   height: 150px;
   background-color: darkcyan; }
+
+.botonNewsletter {
+  height: 80px; }
 
 .estiloRedes {
   justify-content: center;
