@@ -113,6 +113,7 @@ footer .formatoNewsletter {
   height: 200px;
   margin-right: 0px;
   margin-left: 0px;
+  margin-top: 10px;
   background-image: url("../imagenes/ejemplo10.png"); }
 
 .estiloInput input {
@@ -309,7 +310,7 @@ footer .formatoNewsletter {
   grid-area: categorias;
   border: double 1px darkcyan;
   flex-direction: column;
-  background-color: darkcyan; }
+  background-color: #e2d2c7; }
   .categoriasAside h3 {
     margin: 35px 0px 0px 0px; }
 
@@ -552,11 +553,62 @@ footer .formatoNewsletter {
     font-size: 125%;
     margin: 0px 0px 10px 0px; }
   .formatoNewsletter {
+    display: none; }
+  .nosotrosTablet {
     display: none; } }
 
-/*tamanio PC*/
-@media (min-width: 576px) {
+/*Tamanio Tablet*/
+@media (min-width: 576px) and (max-width: 991.98px) {
+  /*Aplicado al Index*/
+  .subtitulo {
+    margin-right: 90px; }
+  .carouselMinSize {
+    display: none; }
+  .tamanioCardsIndex img {
+    width: 100%; }
+  .ubicacionCards {
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%; }
+  .contenedorCards {
+    display: flex;
+    justify-content: space-between; }
+  .seccionProdDestacados {
+    margin: 10px; }
+  /*Aplicado a Nosotros*/
+  .nosotrosSize {
+    display: none; }
+  .imagenNosotros img {
+    width: 100%; }
+  /*Aplicado a todos los html*/
+  .footerMinSize {
+    display: none; }
+  body {
+    padding-bottom: 0; }
+  /*Barra de navigacion*/
+  .estiloNav {
+    position: relative;
+    font-size: 150%;
+    min-width: 21.5rem;
+    text-align: center;
+    position: 0; }
+    .estiloNav li {
+      width: 100% !important; }
+  .logoNav img {
+    width: 200px; }
+  .estiloSubmenu {
+    position: absolute !important;
+    font-size: 100%;
+    min-width: 21.5rem;
+    text-align: center;
+    position: 0;
+    width: 100%; } }
+
+/*Aplicado al resto de las medidas*/
+@media (min-width: 992px) {
   .footerMinSize {
     display: none; }
   .carouselMinSize {
+    display: none; }
+  .nosotrosTablet {
     display: none; } }
