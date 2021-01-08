@@ -1,92 +1,18 @@
-/*Variables*/
-$color-purple: #e2d2c7;
-$tamanio:10px;
-$color-aside: true;
-$fuente-Hind: 'Hind',
-sans-serif;
-$fuente-Montserrat:'Montserrat',
-sans-serif;
-
-
-/*ejemplos de imagenes de fondo*/
-@mixin titulos-fondo{
-    color:white;
-    background-image: url("../imagenes/ejemplo10.png");
-    text-align: center;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    font-family: $fuente-Montserrat;
-    font-weight: bold;
-}
-
-
-/*variables de operadores*/
-@mixin formato-titulos {
-    color: darkcyan;
-    text-align: center;
-    font-size: 170%;
-    font-family: 'Montserrat', sans-serif;
-    margin: 2%;
-    font-weight: bold;
-}
-
-
-@mixin contenido-centrado {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
+@import "vars.scss";
 
 /*aplicado a todos los html*/
 body {
     max-height: 2500px;
     min-height: 1000px;
-    padding-bottom: 10px;
+    padding-bottom: $tamanio10;
     position: relative;
 }
-
-@media (max-width: 575.98px) {
-    body {
-        padding-bottom: 0;
-    }
-    
-    .estiloNav{
-        position: relative;
-        font-size: 100%;
-        min-width: 21.5rem;
-        text-align: center;
-        position: 0;
-        li{
-            width:100%!important;
-        }
-    }
-    .estiloSubmenu {
-        position: absolute!important;
-        font-size: 100%;
-        min-width: 21.5rem;
-        text-align: center;
-        position: 0;
-    }
-}
-
-
 footer .formatoNewsletter {
     margin-top: 100px;
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
-  
-}
-
-@media (max-width: 575.98px) {
-    footer {
-        position: relative;
-    }
 }
 
 /*color de todos los titulos principales*/
@@ -97,42 +23,39 @@ footer .formatoNewsletter {
     @include titulos-fondo;
 }
 
-
 /*Aplicado al NAV*/
 .estiloNav li {
-    background-color: darkcyan;
-    height: ($tamanio*7)+1;
+    background-color: $color-principal;
+    height: ($tamanio10*7)+1;
     width: 200px;
     @include contenido-centrado;
 
     a {
-        color: white;
+        color: $color-blanco;
     }
 
     &:hover {
-        background-color: $color-purple;
-        color: white;
-
+        @include fondo-purple-texto-blanco;
     }
 }
-.estiloBarra{
-    background-color: darkcyan;
+.estiloBarra {
+    background-color: $color-principal;
 }
 .estiloSubmenu {
-    background-color: darkcyan;
+    background-color: $color-principal;
 }
 
 .contenedorNav {
-    border: solid 1px darkcyan;
+    border: solid 1px $color-principal;
     padding: 0%;
 }
 
 .menuHamburguesa {
-    background-color: darkcyan;
+    background-color:$color-principal;
 }
 
 .imagenMenuHamburguesa {
-    background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff');
+    background-image: $imagen-menu-hamburguesa;
 }
 
 .estiloHeader {
@@ -141,15 +64,14 @@ footer .formatoNewsletter {
 
 /*Aplicado al footer*/
 .ordenFooter {
-    background-color: darkcyan;
-    margin-top: 10px;
+    background-color: $color-principal;
+    margin-top: $tamanio10;
     margin-right: 0px;
     margin-left: 0px;
 }
 
 .derechosReservados {
-    font-family: 'Montserrat', san-serif;
-    color: white;
+   @include fuente-montserrat-color-blanco;
     font-size: 80%;
 }
 
@@ -160,12 +82,12 @@ footer .formatoNewsletter {
 }
 
 .newsletterMinSize{
-    background-image: url("../imagenes/ejemplo10.png");
+    background-image: $imagen-fondo-titulos;
     height: 200px;
     display: flex;
     align-items: center;
     h3{
-        color: white;
+        @include fuente-montserrat-color-blanco;
         font-size: 200%;
         text-align: center;
     }
@@ -178,8 +100,7 @@ footer .formatoNewsletter {
     height: 200px;
     align-items: center;
     h3 {
-    color: white;
-    font-family: 'Montserrat', san-serif;
+    @include fuente-montserrat-color-blanco;
     text-align: center;
     font-size: 150%;
 }
@@ -188,7 +109,7 @@ footer .formatoNewsletter {
     height: 200px;
     margin-right: 0px;
     margin-left: 0px;
-    background-image: url("../imagenes/ejemplo10.png");
+    background-image: $imagen-fondo-titulos;
 }
 .estiloInput input {
     height: 25px;
@@ -202,7 +123,7 @@ footer .formatoNewsletter {
 
 .footerMaxSize{
     height: 150px;
-    background-color: darkcyan;
+    background-color: $color-principal;
 }
 .botonNewsletter{
     height: 80px;
@@ -212,8 +133,7 @@ footer .formatoNewsletter {
     flex-direction: column;
 
     span {
-        font-family: $fuente-Montserrat;
-        color: white;
+      @include fuente-montserrat-color-blanco;
         font-size: 150%;
     }
 
@@ -222,91 +142,56 @@ footer .formatoNewsletter {
         padding: 0;
         margin: 0;
         margin-right: 90px;
-
         li {
             list-style: none;
             padding: 20%;
             transition: all 0.5s;
-
             &:hover {
                 transform: scale(3, 3);
             }
-
             a {
-                color: white;
+                color:$color-blanco;
             }
         }
     }
 }
 
 /*Boton de whatsApp*/
-
 .btn-whatsapp {
-    display:block;
-    width:50px;
-    height:50px;
-    color:#fff;
-    position: fixed;
-    right:20px;
-    bottom:20px;
-    border-radius:50%;
-    line-height:10px;
-    text-align:center;
-    z-index:999;
+    @include whatsapp-flotante;
     img{
         width: 40px;
     }
 }
 
-
 /*Aplicado al index*/
-
 .subtitulo {
-    color: gray;
     font-size: 120%;
-    font-family: "Hind", sans-serif;
+    font-family:$fuente-Hind;
     text-align: end;
     margin-right: 300px;
-    background-color: whitesmoke;
+    background-color: rgb(194, 190, 190);
     margin-bottom: 30px;
     padding-right: 30px;
+    color: $color-blanco;
 }
-
-@media (max-width: 575.98px) {
-    .subtitulo {
-        color: gray;
-        font-size: 90%;
-        font-family: "Hind", sans-serif;
-        text-align: end;
-        background-color: whitesmoke;
-        margin: 2%;
-    }
-    .tamanioCardsIndex{
-        margin-left: 30px;
-    }
-
-}
-
 .ubicacionCards{
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: $tamanio10;
+    margin-left: $tamanio10;
     width: 1325px;
 }
 .carouselMaxSize {
     margin-left: 0px;
     margin-right: 0px;
-
 }
 
 .imagenesCarousel img {
     width: 100%;
 }
 
-
 .animate__backInLeft {
     animation-duration: 2s;
 }
-
 .tamanioCardsIndex {
     display: flex;
     align-items: center;
@@ -317,13 +202,11 @@ footer .formatoNewsletter {
     width: 325px;
     }
     h5{
-        color:$color-purple;
-        font-family: $fuente-Hind;
+        @include fuente-hind-color-purple;
         font-size: 120%;
     }
     p{
-        font-family: $fuente-Hind;
-        color: gray;
+        @include fuente-hind-color-gris;
     }
 }
 .contenedorCards{
@@ -332,21 +215,16 @@ footer .formatoNewsletter {
     border: none;
     display: flex;
     justify-content: center;
-
 }
 
 /*Banners Index*/
-
 .estiloBanners {
-    background-color: darkcyan;
-
+    background-color: $color-principal;
     a {
         color: white;
     }
-
     .left {
         position: relative;
-
         &:before {
             content: "";
             position: absolute;
@@ -354,20 +232,16 @@ footer .formatoNewsletter {
             height: 2px;
             bottom: 0;
             left: 0;
-            background-color: #FFF;
+            background-color:$color-blanco;
             visibility: hidden;
             transition: all 0.3s ease-in-out;
         }
-
         &:hover:before {
             visibility: visible;
             width: 100%;
         }
-
     }
-
 }
-
 .ubicacionBanners {
     margin: 2%;
 }
@@ -377,77 +251,21 @@ footer .formatoNewsletter {
     @include formato-titulos;
 }
 
-/*responsive al index*/
-/*tamanio celular*/
-@media (max-width: 575.98px) {
-    .logoNav img {
-        width: 200px;
-    }
-
-    .footerMaxSize {
-        display: none;
-    }
-
-    .formatoNewsletter{
-        display: none;
-    }
-
-    .carouselMaxSize {
-        display: none;
-    }
-    .estiloRedes {
-        display: flex;
-        justify-content: start;
-
-        ul {
-            margin-right: 160px;
-
-            li {
-                padding: 30%;
-            }
-        }
-    }
-
-    .estiloRedes .derechosReservados p {
-        margin-top: $tamanio+2;
-    }
-    .ubicacionCards{
-        width: 100%;
-    }
-    .titulosFondo{
-        height: 240px;
-    }
-}
-/*tamanio PC*/
-@media (min-width: 576px) {
-    .footerMinSize {
-        display: none;
-    }
-
-    .carouselMinSize {
-        display: none;
-    }
-  
-}
-
-
 /*Aplicado a productos*/
-
 /*Estilo Modal*/
 .formatoModal{
-    background-color: rgb(107, 152, 159);
+    background-color:$color-modal;
     width: 100%;
     border-radius: 0%;
-    color: withe;
-    color: white;
+    color:$color-blanco;
     &:hover{
-        background-color:deepskyblue;
+        background-color:$color-modal-hover;
     }
 }
 
 .modalProductos{
-    background-color:darkcyan;
-    color: white;
+    background-color:$color-principal;
+    color: $color-blanco;
 }
 .tituloModal{
     text-align: center;
@@ -464,21 +282,18 @@ footer .formatoNewsletter {
 /*estilos aside Categorias*/
 .formatoCategorias {
     padding: 0px;
-
     li {
-        color: gray;
+        color:$color-gris;
         list-style-type: none;
         margin: 10px 0px 10px 0px;
-
         &:hover {
-            color: white;
+            color: $color-blanco;
         }
     }
 }
 
 .tituloSecundarioCategorias {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+    @include fuente-montserrat-color-blanco;
 }
 
 /*aplicando grids*/
@@ -493,12 +308,10 @@ footer .formatoNewsletter {
         "categorias productosDescuentos productosDescuentos productosDescuentos";
 
     grid-template-columns: 1fr 1fr 2fr 2fr;
-    grid-template-rows: $tamanio*15 auto auto $tamanio*15;
-    grid-column-gap: $tamanio;
-    grid-row-gap: $tamanio;
+    grid-template-rows: $tamanio10*15 auto auto $tamanio10*15;
+    grid-column-gap: $tamanio10;
+    grid-row-gap: $tamanio10;
 }
-
-
 .seccionPrincipal {
     grid-area: productosGrilla;
 }
@@ -508,54 +321,25 @@ footer .formatoNewsletter {
     justify-content: start;
     align-items: center;
     grid-area: categorias;
-    border: double 1px darkcyan;
+    border: double 1px $color-principal;
     flex-direction: column;
 
     @if $color-aside==false {
-        background-color: darkcyan;
+        background-color: $color-principal;
     }
-
     @else {
-        background-color: $color-purple;
+        background-color: $color-principal;
     }
-
     h3 {
         margin: 35px 0px 0px 0px;
     }
 }
-
 .productosDescuentos {
     grid-area: productosDescuentos;
 }
-
 .seccionImagenes {
     display: grid;
     grid-template-columns: auto auto auto;
-}
-
-@media (max-width: 575.98px) {
-    .seccionImagenes {
-        display: grid;
-        grid-template-columns: auto;
-    }
-
-    .categoriasAside {
-        display: none;
-    }
-
-    .grillaProductos {
-        grid-template-areas:
-
-            "productosGrillaproductosGrilla"
-            " productosGrilla  productosGrilla"
-            "productosDescuentos productosDescuentos"
-            " productosDescuentos productosDescuentos";
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-column-gap: 0;
-        grid-row-gap: $tamanio;
-    }
-
 }
 
 .ImagenContenido {
@@ -563,17 +347,13 @@ footer .formatoNewsletter {
     align-items: center;
     flex-direction: column;
     position: relative;
-
     img {
         width: 60%;
-        margin-top: $tamanio*2;
+        margin-top: $tamanio10*2;
     }
-
     p {
-        font-family: 'Montserrat', san-serif;
-        color: gray;
+        @include fuente-montserrat-color-gris;
     }
-
 }
 
 .textoImagenContenido {
@@ -581,7 +361,7 @@ footer .formatoNewsletter {
     top: 0;
     width: 100%;
     height: 100%;
-    color: white;
+    color:$color-blanco;
     background: rgba(0, 0, 0, 0.7);
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
@@ -589,56 +369,39 @@ footer .formatoNewsletter {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     i {
-        color: darkcyan;
+        color:$color-principal;
         font-size: 36px;
     }
-
     p {
         padding: 30px;
         font-weight: bold;
-
     }
-
-
     &:hover {
         opacity: 0.8;
     }
-
 }
 
-
-
-
 /*Animaciones de Productos*/
-
-
 .imagenAnimacion {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-
-
 .imagenDescuentos {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-
 .precioDescuento {
     text-decoration: line-through;
     background-color: $color-purple;
 }
-
-
 .logoNav {
     animation-name: logo;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
-
 @keyframes logo {
     0% {
         opacity: 0;
@@ -653,49 +416,34 @@ footer .formatoNewsletter {
     }
 }
 
-
 /*aplicado a nosotros.html*/
 /*solo para el texto de notros porque es mas largo*/
 .textoPrincipalNosotros {
     color: rgb(121, 121, 121);
     text-align: justify;
     line-height: 150%;
-    font-family: 'Hind', sans-serif;
-    padding: $tamanio*3;
+    font-family: $fuente-Hind;
+    padding: $tamanio10*3;
 }
 
 .graciasNosotros {
-    font-family: 'Montserrat', san-serif;
+    @include fuente-montserrat-color-gris;
     font-weight: bold;
-    color: gray;
     font-size: 150%;
     text-align: center;
-    letter-spacing: $tamanio*2;
+    letter-spacing: $tamanio10*2;
 }
-
-
 
 .imagenNosotros img {
-    width: $tamanio*60;
-    padding: $tamanio*2;
-}
-
-@media (max-width: 575.98px) {
-    .imagenNosotros img {
-        width: 340px;
-    }
+    width: $tamanio10*60;
+    padding: $tamanio10*2;
 }
 
 .animate__backInDown {
     animation-duration: 2s;
 }
 
-
-
 .animate__rotateInDownRight {
-
-
-
     animation-duration: 2s;
 }
 
@@ -706,8 +454,7 @@ footer .formatoNewsletter {
 
     &:not(.collapsed){
     background-color:$color-purple;
-    color: gray;
-    font-family: $fuente-Montserrat;
+    @include fuente-montserrat-color-gris;
     font-weight: bold;
     }
     &:focus{
@@ -716,15 +463,12 @@ footer .formatoNewsletter {
     }
 }
 .cuerpoAcordion{
-    font-family: $fuente-Montserrat;
-    color: gray;
+   @include fuente-montserrat-color-gris;
 }
 
 /*Aplicado a Contactanos*/
-
 .wathsapp  a {
-    color: white;
-    font-family: $fuente-Hind;
+  @include fuente-hind-color-blanco;
 }    
 
 .ubicacionContacto {
@@ -733,54 +477,162 @@ footer .formatoNewsletter {
     align-items: center;
     font-family: $fuente-Hind;
     background-color: #E7E7E6;
-    margin-top: 10px;
+    margin-top: $tamanio10;
     color: black;
     font-weight: lighter;
-
     p {
         margin: 0;
         padding-bottom: 2px;
     }
-
     &:hover {
-        background-color: $color-purple;
-        color: white;
+        @include fondo-purple-texto-blanco;
     }
 }
 
 .subtituloContacto p{
     text-align: center;
     font-size: 160%;
-    color:gray;
+    color:$color-gris;
     font-family: $fuente-Montserrat;
     background:$color-purple;
     margin: 10px 102px 10px 102px;
 }
 .estiloFormulario{
     background-color: $color-purple;
-    font-family: $fuente-Montserrat;
+    @include fuente-montserrat-color-gris;
     font-size: 110%;
-    color: gray;
 }
 .eMailSize{
     width: 100%;
 }
 .btnForm{
-    margin: 10px;
-    background: darkcyan;
-    font-family: 'Montserrat';
+    margin: $tamanio10;
+    background:$color-principal;
+    @include fuente-montserrat-color-blanco;
     border: 0;
-    color: white;
 }
 .textoContacto{
     text-align: center;
-    color: white;
-    background-color: darkcyan;
-    margin-top: 10PX;
+    color: $color-blanco;
+    background-color: $color-principal;
+    margin-top: $tamanio10;
 }
-@media (max-width: 575.98px){
+
+/*Tamanio Celular*/
+@media (max-width: 575.98px) {
+    body {
+        padding-bottom: 0;
+    }
+    /*Barra de navigacion*/
+    .estiloNav{
+        position: relative;
+        font-size: 100%;
+        min-width: 21.5rem;
+        text-align: center;
+        position: 0;
+        li{
+            width:100%!important;
+        }
+    }
+    .logoNav img {
+        width: 200px;
+    }
+    .estiloSubmenu {
+        position: absolute!important;
+        font-size: 100%;
+        min-width: 21.5rem;
+        text-align: center;
+        position: 0;
+    }
+    /*Footer*/
+    footer {
+        position: relative;
+    }
+    .footerMaxSize {
+        display: none;
+    }
+    .estiloRedes {
+        display: flex;
+        justify-content: start;
+
+        ul {
+            margin-right: 160px;
+
+            li {
+                padding: 30%;
+            }
+        }
+    }
+    .estiloRedes .derechosReservados p {
+        margin-top: $tamanio10+2;
+    }
+
+    /*Aplicado al index*/
+    .subtitulo {
+        @include fuente-hind-color-gris;
+        font-size: 90%;
+        text-align: end;
+        background-color:rgb(194, 190, 190);
+        margin: 2%;
+    }
+    .tamanioCardsIndex{
+        margin-left: 30px;
+    }
+    .contenedorCards{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .carouselMaxSize {
+        display: none;
+    }
+    .ubicacionCards{
+        width: 100%;
+    }
+    /*Aplicado a todos los titulos menos en Index*/
+    .titulosFondo{
+        height: 240px;
+    }
+    /*Aplicado a Productos*/
+    .seccionImagenes {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .categoriasAside {
+        display: none;
+    }
+    .grillaProductos {
+        grid-template-areas:
+
+            "productosGrillaproductosGrilla"
+            " productosGrilla  productosGrilla"
+            "productosDescuentos productosDescuentos"
+            " productosDescuentos productosDescuentos";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-column-gap: 0;
+        grid-row-gap: $tamanio10;
+    }
+    /*Aplicado a Nosotros*/
+    .imagenNosotros img {
+        width: 340px;
+    }
+    /*Aplicado a Contactos*/
     .subtituloContacto p{
         font-size: 125%;
         margin: 0px 0px 10px 0px;
     }
+    .formatoNewsletter{
+        display: none;
+    }
 }
+/*tamanio PC*/
+@media (min-width: 576px) {
+    .footerMinSize {
+        display: none;
+    }
+    .carouselMinSize {
+        display: none;
+    }
+}
+

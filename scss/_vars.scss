@@ -1,0 +1,79 @@
+/*Variables*/
+$color-purple: #e2d2c7;
+$color-principal:darkcyan;
+$tamanio10:10px;
+$color-aside: true;
+$fuente-Hind: 'Hind',
+sans-serif;
+$fuente-Montserrat:'Montserrat',
+sans-serif;
+$color-blanco:white;
+$color-gris:gray;
+$imagen-fondo-titulos:url("../imagenes/ejemplo10.png");
+$imagen-menu-hamburguesa: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff');
+$color-modal:rgb(107, 152, 159);
+$color-modal-hover:deepskyblue;
+
+/*mixin*/
+@mixin titulos-fondo{
+    color:white;
+    background-image: $imagen-fondo-titulos;
+    text-align: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: $tamanio10;
+    font-family: $fuente-Montserrat;
+    font-weight: bold;
+}
+@mixin formato-titulos {
+    color: $color-principal;
+    text-align: center;
+    font-size: 170%;
+    font-family: $fuente-Montserrat;
+    margin: 2%;
+    font-weight: bold;
+}
+@mixin contenido-centrado {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+@mixin fondo-purple-texto-blanco {
+    background-color: $color-purple;
+    color: $color-blanco;
+}
+@mixin fuente-montserrat-color-blanco{
+    font-family: $fuente-Montserrat;
+    color: $color-blanco;
+}
+@mixin fuente-montserrat-color-gris {
+    font-family: $fuente-Montserrat;
+    color:$color-gris;
+}
+@mixin fuente-hind-color-purple{
+    font-family: $fuente-Hind;
+    color: $color-purple;
+}
+@mixin fuente-hind-color-gris{
+    font-family: $fuente-Hind;
+    color: $color-gris;
+}
+@mixin fuente-hind-color-blanco {
+    color: $color-blanco;
+    font-family: $fuente-Hind;
+}
+@mixin whatsapp-flotante {
+    display:block;
+    width:50px;
+    height:50px;
+    color:#fff;
+    position: fixed;
+    right:20px;
+    bottom:20px;
+    border-radius:50%;
+    line-height:10px;
+    text-align:center;
+    z-index:999;
+}
