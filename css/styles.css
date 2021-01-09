@@ -45,6 +45,9 @@ footer .formatoNewsletter {
   display: flex; }
   .estiloNav li a {
     color: white; }
+    .estiloNav li a:hover {
+      background-color: #e2d2c7;
+      color: white; }
   .estiloNav li:hover {
     background-color: #e2d2c7;
     color: white; }
@@ -53,7 +56,9 @@ footer .formatoNewsletter {
   background-color: darkcyan; }
 
 .estiloSubmenu {
-  background-color: darkcyan; }
+  background-color: darkcyan;
+  padding: 0;
+  width: 100%; }
 
 .contenedorNav {
   border: solid 1px darkcyan;
@@ -100,9 +105,10 @@ footer .formatoNewsletter {
   width: 140px; }
 
 .tituloNewsletter {
+  justify-content: center;
+  align-items: center;
   display: flex;
-  height: 200px;
-  align-items: center; }
+  height: 200px; }
   .tituloNewsletter h3 {
     font-family: "Montserrat", sans-serif;
     color: white;
@@ -258,7 +264,8 @@ footer .formatoNewsletter {
   background-color: #6b989f;
   width: 100%;
   border-radius: 0%;
-  color: white; }
+  color: white;
+  margin-bottom: 5px; }
   .formatoModal:hover {
     background-color: deepskyblue; }
 
@@ -431,6 +438,9 @@ footer .formatoNewsletter {
 .wathsapp a {
   color: white;
   font-family: "Hind", sans-serif; }
+  .wathsapp a:hover {
+    background-color: #e2d2c7;
+    color: white; }
 
 .ubicacionContacto {
   display: flex;

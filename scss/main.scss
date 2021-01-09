@@ -32,17 +32,23 @@ footer .formatoNewsletter {
 
     a {
         color: $color-blanco;
+        &:hover{
+            @include fondo-purple-texto-blanco;
+        }
     }
 
     &:hover {
         @include fondo-purple-texto-blanco;
     }
 }
+
 .estiloBarra {
     background-color: $color-principal;
 }
 .estiloSubmenu {
     background-color: $color-principal;
+    padding: 0;
+    width: 100%;
 }
 
 .contenedorNav {
@@ -96,9 +102,8 @@ footer .formatoNewsletter {
     width: 140px;
 }
 .tituloNewsletter {
-    display: flex;
+   @include contenido-centrado;
     height: 200px;
-    align-items: center;
     h3 {
     @include fuente-montserrat-color-blanco;
     text-align: center;
@@ -259,6 +264,7 @@ footer .formatoNewsletter {
     width: 100%;
     border-radius: 0%;
     color:$color-blanco;
+    margin-bottom: 5px;
     &:hover{
         background-color:$color-modal-hover;
     }
@@ -470,6 +476,9 @@ footer .formatoNewsletter {
 /*Aplicado a Contactanos*/
 .wathsapp  a {
   @include fuente-hind-color-blanco;
+  &:hover{
+      @include fondo-purple-texto-blanco;
+  }
 }    
 
 .ubicacionContacto {
